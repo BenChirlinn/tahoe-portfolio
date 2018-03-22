@@ -1,0 +1,19 @@
+{
+  "name": "tahoe-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio React web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenChirlin/tahoe-portfolio.git"
+  },
+  "author": "Benjamin Chirlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenChirlin/tahoe-portfolio/issues"
+  },
+  "homepage": "https://github.com/BenChirlin/tahoe-portfolio#readme"
+}
