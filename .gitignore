@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#Personal readme only for sensitive data
+README.private.md
+
 # Runtime data
 pids
 *.pid
