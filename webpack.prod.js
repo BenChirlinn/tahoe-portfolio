@@ -7,6 +7,7 @@ const webpack = require("webpack");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = merge({
+  // @todo This should probably be disabled long run
   devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
@@ -20,5 +21,8 @@ module.exports = merge({
         }
       }
     })
-  ]
+  ],
+  output: {
+    filename: "[name].[hash].js"
+  }
 });
