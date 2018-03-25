@@ -6,9 +6,9 @@ const common = require('./webpack.common.js');
 const webpack = require("webpack");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-module.exports = merge({
+module.exports = merge(common, {
   // @todo This should probably be disabled long run
-  devtool: 'source-map',
+  // devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
