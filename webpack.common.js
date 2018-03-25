@@ -23,6 +23,26 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,  
+        use: {
+          loader: 'url-loader',
+          options: { 
+            limit: 8192, // Convert images < 8kb to base64 strings
+            name: 'images/[hash]-[name].[ext]'
+          } 
+        }
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            name: "fonts/[name].[ext]",
+            limit: 50000,
+          },
+        },
       }
     ]
   },

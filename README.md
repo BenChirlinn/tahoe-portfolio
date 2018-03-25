@@ -26,6 +26,8 @@ I opted to manage deploys directly through git (see resouces below for refence).
 - [Valentino G. Blog - *Webpack 4 Tutorial*](https://www.valentinog.com/blog/webpack-4-tutorial/#webpack_4_setting_up_webpack_4_with_React)
 - [rwieruch; - *The Minimal React + Webpack 4 + Babel Setup*](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 - [Hackernoon - *Webpack 4 tutorial: All You Need to Know, from 0 Conf to Production Mode*](https://hackernoon.com/webpack-4-tutorial-all-you-need-to-know-from-0-conf-to-production-mode-d32759d0dc2d)
+- [A Beginner's Guide to Webpack - *Handling Images*](https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d)
+- [Survive JS - *Loading Fonts*](https://survivejs.com/webpack/loading/fonts/)
 
 ### Deployment
 
