@@ -4,6 +4,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 const webpack = require("webpack");
+const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractLess = new ExtractTextPlugin({
@@ -17,17 +18,28 @@ module.exports = merge(common, {
       {
         test: /\.less$/,
         use: extractLess.extract({
-          use: [{
-            loader: "css-loader", options: {
-              sourceMap: true
+          fallback: "style-loader",
+          use: [
+            {
+              loader: "css-loader", options: {
+                sourceMap: true,
+              }
+            },
+            { 
+              loader: 'postcss-loader', 
+              options: {
+                sourceMap: true,
+                plugins: () => autoprefixer({
+                  browsers: ['last 3 versions', '> 1%']
+                })
+              }
+            },
+            {
+              loader: "less-loader", options: {
+                sourceMap: true
+              }
             }
-          }, {
-            loader: "less-loader", options: {
-              sourceMap: true
-            }
-          }],
-            // use style-loader in development
-            fallback: "style-loader"
+          ]            
         })
       },
     ]

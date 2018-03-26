@@ -4,10 +4,24 @@
   flex-direction: column;
   align-items: center;
 
+  position:relative;
   height: 50vh;
   min-height: 400px;
   text-align: center;
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
+
+  .texture {
+    display: none;
+    position: absolute;;
+    width: 100%;
+    height: 100%;
+    background-color: @sunset-texture;
+    opacity: 0.4;
+    z-index: 1;
+    // mask-image: url(../../images/texture-mask.png), linear-gradient(black, transparent);
+    // mask-position: center, bottom left;
+    // mask-repeat: repeat-x, no-repeat;
+  }
 
   .sun {
     display: block;
@@ -16,6 +30,7 @@
     height: 150px;
     background-color: @sun-yellow;
     .border-radius(75px);
+    z-index: 3;
   }
 
   h1 {
@@ -23,6 +38,7 @@
     font-family: Brynne;
     font-size: 48px;
     line-height: 48px;
+    z-index: 3;
 
     @media @mobile {
       font-size: 35px;
@@ -36,5 +52,6 @@
     height: 75px;
     background: url(../../images/mountains.svg);
     background-size: 270px 75px;
+    z-index: 3;
   }
 }

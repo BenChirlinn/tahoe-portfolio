@@ -2,13 +2,16 @@ import React from 'react';
 
 const Body = () => {
   const buildText = [
-    "Excuse my mess but I decided to redo my website while I look for a new work.",
-    "In my glee I attempted to update some dependencies on here.",
-    "This in turn led to some rash decisions which resulted in breaking many things.",
-    "Long story short: under construction!"
+    "<strong>Under Construction</strong>",
+    "I'm a web developer (with some design chops) living in the Bay Area.",
+    "I'm currently funemployed and looking for what's next.",
+    "Contact me if you have something I might find intriguing <em>info(AT)benjaminchirlin.com</em>",
+    "Please feel free to check out my digital footprint elsewhere for now:",
+    "<a href='http://github.com/benchirlin' title='Github'>Github</a>",
+    "<a href='https://twitter.com/benchirlin' title='Twitter'>Twitter</a>"
   ];
   return buildText.map((text) => {
-    return <p>{text}</p>;
+    return <p dangerouslySetInnerHTML={{__html: text}}/>;
   });
 };
 

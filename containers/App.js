@@ -10,7 +10,9 @@ export default class App extends Component {
     return (
       <HomepageContainer>
         <Header title="Benjamin<br/>Chirlin" />
-        <Body/>
+        <div id="page-body">
+          <Body/>
+        </div>
       </HomepageContainer>
     );
   }
