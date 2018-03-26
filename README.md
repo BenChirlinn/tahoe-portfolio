@@ -37,3 +37,9 @@ Imporant resources I used when determining production deployment include the fol
 - [Medium - *Understanding React Deploymnent*](https://medium.com/@baphemot/understanding-react-deployment-5a717d4378fd)
 - [Webpack - *Guides/Production*](https://webpack.js.org/guides/production/)
 - [Digital Ocean - *How To Set Up Automatic Deployment with Git with a VPS*](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps)
+
+# Design Inspirations
+
+- [Timmy O'Mahony - Personal Portfolio](https://timmyomahony.com/#recent-projects)
+- [Zach Cole - Personal Portfolio](http://zcole.me/)
+- [freeCodeCamp - *15 Web Developer Portfolios to Inspire You*](https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae)
