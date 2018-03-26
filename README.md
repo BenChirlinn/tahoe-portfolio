@@ -17,7 +17,16 @@ Included libraries and technologies:
 
 # Deployment
 
-I opted to manage deploys directly through git (see resouces below for refence). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest. 
+I opted to manage deploys directly through git (see resouces below for refence). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest.
+
+### Deployment Walkthrough
+
+- Push latest changes to the repo from local to "live" remote (`ssh://root@MY_SERVER_IP/srv/tahoe-portfolio/site.git`)
+- SSH into server
+- Navigate to work tree at `/srv/www/benjaminchirlin.com`
+- Install latest dependencies if required `npm i`
+- Build latest `npm run build`
+- Rejoice at how relatively simple and easy to maintain this pipeline is! :tada:
 
 # Resources
 
