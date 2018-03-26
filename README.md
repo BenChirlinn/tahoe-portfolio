@@ -28,6 +28,7 @@ I opted to manage deploys directly through git (see resouces below for refence).
 - [Hackernoon - *Webpack 4 tutorial: All You Need to Know, from 0 Conf to Production Mode*](https://hackernoon.com/webpack-4-tutorial-all-you-need-to-know-from-0-conf-to-production-mode-d32759d0dc2d)
 - [A Beginner's Guide to Webpack - *Handling Images*](https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d)
 - [Survive JS - *Loading Fonts*](https://survivejs.com/webpack/loading/fonts/)
+- [Stack Overflow - *webpack with less and postcss autoprefixer*](https://stackoverflow.com/questions/47846209/webpack-with-less-and-postcss-autoprefixer)
 
 ### Deployment
 
@@ -37,6 +38,11 @@ Imporant resources I used when determining production deployment include the fol
 - [Medium - *Understanding React Deploymnent*](https://medium.com/@baphemot/understanding-react-deployment-5a717d4378fd)
 - [Webpack - *Guides/Production*](https://webpack.js.org/guides/production/)
 - [Digital Ocean - *How To Set Up Automatic Deployment with Git with a VPS*](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps)
+
+# CSS/LESS
+
+- [Eric Rasch - *Easy Media Queries Shortcodes (w/ LESS)*](https://codepen.io/ericrasch/pen/HzoEx)
+- [codrops - *mask-image*](https://tympanus.net/codrops/css_reference/mask-image/)
 
 # Design Inspirations
 
