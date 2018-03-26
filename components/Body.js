@@ -7,8 +7,8 @@ const Body = () => {
     "I'm currently funemployed and looking for what's next.",
     "Contact me if you have something I might find intriguing <em>info(AT)benjaminchirlin.com</em>",
     "Please feel free to check out my digital footprint elsewhere for now:",
-    "<a href='http://github.com/benchirlin' title='Github'>Github</a>",
-    "<a href='https://twitter.com/benchirlin' title='Twitter'>Twitter</a>"
+    "<a target='_blank' href='http://github.com/benchirlin' title='Github'>Github</a>",
+    "<a target='_blank' href='https://twitter.com/benchirlin' title='Twitter'>Twitter</a>"
   ];
   return buildText.map((text) => {
     return <p dangerouslySetInnerHTML={{__html: text}}/>;

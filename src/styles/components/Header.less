@@ -11,26 +11,40 @@
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
 
   .texture {
-    display: none;
-    position: absolute;;
-    width: 100%;
-    height: 100%;
-    background-color: @sunset-texture;
-    opacity: 0.4;
+    position: absolute;
     z-index: 1;
-    // mask-image: url(../../images/texture-mask.png), linear-gradient(black, transparent);
-    // mask-position: center, bottom left;
-    // mask-repeat: repeat-x, no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &.sunset-texture {
+      background-color: @sunset-texture;
+      mask-image: url(../../images/dot-texture-mask.png);
+      mask-position: center, bottom left;
+      mask-repeat: repeat-x, no-repeat;
+    }
+
+    &.sun-texture {
+      background-color: @sun-hi-yellow;
+      mask-image: url(../../images/sun-texture-mask.png);
+      mask-size: 150px 150px;
+      mask-position: center, top left;
+      mask-repeat: no-repeat;
+    }
   }
 
   .sun {
+    position: relative;
     display: block;
     margin-top: 40px;
     width: 150px;
     height: 150px;
-    background-color: @sun-yellow;
-    .border-radius(75px);
     z-index: 3;
+    overflow: hidden;
+
+    background-color: @sun-lo-yellow;
+    .border-radius(75px);
   }
 
   h1 {
