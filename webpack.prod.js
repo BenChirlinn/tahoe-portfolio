@@ -4,6 +4,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 const webpack = require("webpack");
+const autoprefixer = require('autoprefixer');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -18,13 +19,23 @@ module.exports = merge(common, {
       {
         test: /\.less$/,
         use: extractLess.extract({
-          use: [{
-            loader: "css-loader"
-          }, {
-            loader: "less-loader"
-          }],
-            // use style-loader in development
-            fallback: "style-loader"
+          fallback: "style-loader",
+          use: [
+            {
+              loader: "css-loader"
+            },
+            { 
+              loader: 'postcss-loader', 
+              options: {
+                plugins: () => autoprefixer({
+                  browsers: ['last 3 versions', '> 1%']
+                })
+              }
+            },
+            {
+              loader: "less-loader"
+            }
+          ]
         })
       }
     ]
