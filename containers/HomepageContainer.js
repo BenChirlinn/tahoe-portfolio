@@ -2,7 +2,7 @@ import React from 'react';
 
 const Homepage = ({children}) => {
   return (
-    <div id="main-container">
+    <div id="homepage-container">
       {children}
     </div>
   );

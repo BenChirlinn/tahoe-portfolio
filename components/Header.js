@@ -4,7 +4,7 @@ const Header = ({title}) => {
   return (
     <div id="page-header">
       <span className="sun"></span>
-      <h1>{title}</h1>
+      <h1 dangerouslySetInnerHTML={{__html: title}}></h1>
       <span className="mountains"></span>
     </div>
   );
