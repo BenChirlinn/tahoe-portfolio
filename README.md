@@ -19,7 +19,7 @@ Included libraries and technologies:
 
 I opted to manage deploys directly through git (see resouces below for refence). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest. 
 
-## Resources
+# Resources
 
 ### Webpack
 
@@ -39,12 +39,12 @@ Imporant resources I used when determining production deployment include the fol
 - [Webpack - *Guides/Production*](https://webpack.js.org/guides/production/)
 - [Digital Ocean - *How To Set Up Automatic Deployment with Git with a VPS*](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps)
 
-# CSS/LESS
+### CSS/LESS
 
 - [Eric Rasch - *Easy Media Queries Shortcodes (w/ LESS)*](https://codepen.io/ericrasch/pen/HzoEx)
 - [codrops - *mask-image*](https://tympanus.net/codrops/css_reference/mask-image/)
 
-# Design Inspirations
+### Design Inspirations
 
 - [Timmy O'Mahony - Personal Portfolio](https://timmyomahony.com/#recent-projects)
 - [Zach Cole - Personal Portfolio](http://zcole.me/)
