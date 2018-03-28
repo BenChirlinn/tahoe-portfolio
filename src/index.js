@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import style from "./styles/main.less";
 
+import fbImage from './images/social/fb-image.jpg';
+import twitterImage from './images/social/twitter-image.jpg';
+
 // main app
 import App from '../containers/App';
 

@@ -28,6 +28,32 @@ I opted to manage deploys directly through git (see resouces below for refence).
 - Build latest `npm run build`
 - Rejoice at how relatively simple and easy to maintain this pipeline is! :tada:
 
+# Webpack Config
+
+## HTML
+
+For now the HTML is loaded via `html-webpack-plugin` which adds all needed meta data and icons (via `favicons-webpack-plugin`). This may need to change once routing is added.
+
+## LESS/CSS
+
+LESS is loaded via `extract-text-plugin` which generates the CSS via LESS loader and auto-prefixes the output.
+
+## Fonts
+
+Fonts are all loaded via `url-loader` and as such are hash encoded. Because we have a custom font this feels most secure.
+
+## Images
+
+Images are loaded either view `url-loader` (attempting to inline them) or `file-loader`.
+
+### Core Images
+
+Core images are fundamental to the application's appearance. Webpack will attempt to inline any images placed in the `images/core` directory. Depending on their size they may be so encoded. Regardless their filenames will include a hash afterwards.
+
+### Social Images
+
+These images are only used in meta tags in the header. As such they have to be manually imported in `index.js` and have a custom `file-loader` rule to copy them into the proper distribution directory location.
+
 # Resources
 
 ### Webpack
