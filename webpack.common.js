@@ -2,11 +2,7 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-const extractLess = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development"
-});
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   module: {
@@ -50,8 +46,13 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
+      // favicon: './images/icons/favicon.ico',
       filename: "./index.html"
     }),
-    extractLess
+    new ExtractTextPlugin({
+        filename: "[name].[contenthash].css",
+        disable: process.env.NODE_ENV === "development"
+    }),
+    new FaviconsWebpackPlugin('./src/images/my-logo.png')
   ]
 };
