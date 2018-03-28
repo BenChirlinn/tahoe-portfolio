@@ -22,7 +22,16 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,  
+        test: /\/images\/social\/.+\.(png|jpe?g|gif|svg)$/,  
+        use: {
+          loader: 'file-loader',
+          options: { 
+            name: 'images/social/[name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\/images\/core\/.+\.(png|jpe?g|gif|svg)$/,  
         use: {
           loader: 'url-loader',
           options: { 
@@ -71,7 +80,7 @@ module.exports = {
         },
         {
           name: 'og:image',
-          content: 'images/social/fb-image.jpg'
+          content: './images/social/fb-image.jpg'
         },
         {
           name: 'og:description',
@@ -100,7 +109,7 @@ module.exports = {
         },
         {
           name: 'twitter:image',
-          content: 'images/social/twitter-image.jpg'
+          content: './images/social/twitter-image.jpg'
         },
         {
           name: 'twitter:image:alt',
