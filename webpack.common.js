@@ -47,7 +47,26 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       // favicon: './images/icons/favicon.ico',
-      filename: "./index.html"
+      filename: "./index.html",
+      meta: {
+        description: "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
+        author: "Benjamin Chirlin" ,
+        viewport: "width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1",
+        // Facebook https://developers.facebook.com/docs/sharing/best-practices/
+        "og:title": "Benjamin Chirlin - Web Developer",
+        "og:image": "images/social/fb-image.jpg",
+        "og:description": "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
+        // Twitter https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup
+        "twitter:card": "summary_large_image",
+        "twitter:site": "@benchirlin",
+        "twitter:creator": "@benchirlin",
+        "twitter:title": "Benjamin Chirlin - Web Developer",
+        "twitter:description": "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
+        "twitter:image": "images/social/twitter-image.jpg",
+        "twitter:image:alt": "Minimalist mountain landscape with a sun overlaid with 'Benjamin Chirlin, Web Developer'"
+        // @todo add schema for Google+ and elsewhere http://schema.org/ 
+        // maybe a collection page for home? http://schema.org/CollectionPage -->
+      }
     }),
     new ExtractTextPlugin({
         filename: "[name].[contenthash].css",
