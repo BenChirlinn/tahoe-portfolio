@@ -10,29 +10,24 @@
   text-align: center;
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
 
-  .texture {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  &.sunset-texture::before {
+    .texture(
+      '../images/dot-texture-mask.png';
+      @sunset-texture;
+      auto;
+      center, bottom left;
+      repeat-x, no-repeat
+    );
+  }
 
-    &.sunset-texture {
-      background-color: @sunset-texture;
-      mask-image: url(../../images/dot-texture-mask.png);
-      mask-size: auto;
-      mask-position: center, bottom left;
-      mask-repeat: repeat-x, no-repeat;
-    }
-
-    &.sun-texture {
-      background-color: @sun-hi-yellow;
-      mask-image: url(../../images/sun-texture-mask.png);
-      mask-size: 150px 150px;
-      mask-position: center, top left;
-      mask-repeat: no-repeat;
-    }
+  .sun-texture::before {
+    .texture(
+      '../images/sun-texture-mask.png';
+      @sun-hi-yellow;
+      150px 150px;
+      center, top left;
+      no-repeat
+    )
   }
 
   .sun {

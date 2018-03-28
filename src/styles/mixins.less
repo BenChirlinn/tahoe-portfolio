@@ -19,3 +19,35 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
+
+// .texture-maker(@image; @color; @size: auto; @position: center, top left; @repeat: repeat, repeat) {
+//   content: "texture";
+//   position: absolute;
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+
+//   background-color: @color;
+//   mask-image: url(@image);
+//   mask-size: @size;
+//   mask-position: @position;
+//   mask-repeat: @repeat;
+// }
+
+.texture(@image; @color; @size: auto; @position: 'center, top left'; @repeat: 'repeat, repeat') {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: @color;
+  mask-image: url(@image);
+  mask-size: @size;
+  mask-position: @position;
+  mask-repeat: @repeat;
+}
