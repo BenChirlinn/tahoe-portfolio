@@ -27,3 +27,7 @@ package-lock.json
 
 # Webpack distributions
 dist/
+
+
+# Work archive area
+work-archive/
