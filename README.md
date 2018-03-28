@@ -38,6 +38,7 @@ I opted to manage deploys directly through git (see resouces below for refence).
 - [A Beginner's Guide to Webpack - *Handling Images*](https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d)
 - [Survive JS - *Loading Fonts*](https://survivejs.com/webpack/loading/fonts/)
 - [Stack Overflow - *webpack with less and postcss autoprefixer*](https://stackoverflow.com/questions/47846209/webpack-with-less-and-postcss-autoprefixer)
+- [HTML Webpack Template Repo](https://github.com/jaketrent/html-webpack-template)
 
 ### Deployment
 

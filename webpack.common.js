@@ -45,28 +45,70 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      inject: false,
+      template: require('html-webpack-template'),
       // favicon: './images/icons/favicon.ico',
       filename: "./index.html",
-      meta: {
-        description: "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
-        author: "Benjamin Chirlin" ,
-        viewport: "width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1",
+      title: "Benjamin Chirlin - Web Devloper",
+      appMountId: 'app',
+      meta: [
+        {
+          name: 'description',
+          content: 'Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area'
+        },
+        {
+          name: 'author',
+          content: 'Benjamin Chirlin'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1'
+        },
         // Facebook https://developers.facebook.com/docs/sharing/best-practices/
-        "og:title": "Benjamin Chirlin - Web Developer",
-        "og:image": "images/social/fb-image.jpg",
-        "og:description": "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
+        {
+          name: 'og:title',
+          content: 'Benjamin Chirlin - Web Developer'
+        },
+        {
+          name: 'og:image',
+          content: 'images/social/fb-image.jpg'
+        },
+        {
+          name: 'og:description',
+          content: 'Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area'
+        },
         // Twitter https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup
-        "twitter:card": "summary_large_image",
-        "twitter:site": "@benchirlin",
-        "twitter:creator": "@benchirlin",
-        "twitter:title": "Benjamin Chirlin - Web Developer",
-        "twitter:description": "Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area",
-        "twitter:image": "images/social/twitter-image.jpg",
-        "twitter:image:alt": "Minimalist mountain landscape with a sun overlaid with 'Benjamin Chirlin, Web Developer'"
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:site',
+          content: '@benchirlin'
+        },
+        {
+          name: 'twitter:creator',
+          content: '@benchirlin'
+        },
+        {
+          name: 'twitter:title',
+          content: 'Benjamin Chirlin - Web Developer'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Personal portfolio website for Benjamin Chirlin, web developer in the Bay Area'
+        },
+        {
+          name: 'twitter:image',
+          content: 'images/social/twitter-image.jpg'
+        },
+        {
+          name: 'twitter:image:alt',
+          content: 'Minimalist mountain landscape with a sun overlaid with \'Benjamin Chirlin, Web Developer\''
+        },
         // @todo add schema for Google+ and elsewhere http://schema.org/ 
         // maybe a collection page for home? http://schema.org/CollectionPage -->
-      }
+      ]
     }),
     new ExtractTextPlugin({
         filename: "[name].[contenthash].css",
