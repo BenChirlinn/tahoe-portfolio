@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import HomepageContainer from './HomepageContainer';
+import ProjectContainer from './ProjectContainer';
+import ProjectsNavContainer from './ProjectsNavContainer';
 
-import Header from '../components/Header';
-import Body from '../components/Body';
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={HomepageContainer} />
+      <Route path="/project/:name" component={ProjectContainer} />
+      <ProjectsNavContainer/>
+    </div>
+  </Router>
+);
 
-export default class App extends Component {
-  render () {
-    return (
-      <HomepageContainer>
-        <Header title="Benjamin<br/>Chirlin" />
-        <div id="page-body">
-          <Body/>
-        </div>
-      </HomepageContainer>
-    );
-  }
-}
+export default App;
