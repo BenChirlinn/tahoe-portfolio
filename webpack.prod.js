@@ -7,6 +7,7 @@ const webpack = require("webpack");
 const autoprefixer = require('autoprefixer');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const extractLess = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
@@ -53,7 +54,8 @@ module.exports = merge(common, {
           comments: false
         }
       }
-    })
+    }),
+    new FaviconsWebpackPlugin('./src/images/my-logo.png')
   ],
   output: {
     filename: "[name].[hash].js"

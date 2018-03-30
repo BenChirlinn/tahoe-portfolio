@@ -2,7 +2,6 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   module: {
@@ -122,7 +121,6 @@ module.exports = {
     new ExtractTextPlugin({
         filename: "[name].[contenthash].css",
         disable: process.env.NODE_ENV === "development"
-    }),
-    new FaviconsWebpackPlugin('./src/images/my-logo.png')
+    })
   ]
 };
