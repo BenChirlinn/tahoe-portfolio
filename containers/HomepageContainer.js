@@ -1,17 +1,17 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import UnderConstruction from '../components/UnderConstruction';
+import Homepage from '../components/Homepage';
 
-const Homepage = () => {
+const HomepageContainer = () => {
   return (
     <div id="homepage-container">
       <Header title="Benjamin<br/>Chirlin" />
       <div id="page-body">
-        <UnderConstruction/>
+        <Homepage />
       </div>
     </div>
   );
 }
 
-export default Homepage;
+export default HomepageContainer;
