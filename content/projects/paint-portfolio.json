@@ -1,0 +1,19 @@
+{
+  "name": "paint-portfolio",
+  "title": "Paint Portfolio Site",
+  "body": "A Wordpress website for my portfolio",
+  "gallery": [
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 1 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 2 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 3 caption"
+    }
+  ]
+}
