@@ -1,7 +1,7 @@
 // @see https://webpack.js.org/guides/production/
 
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   module: {
@@ -42,9 +42,9 @@ module.exports = {
       {
         test: /\.(ttf|eot|woff|woff2)$/,
         use: {
-          loader: "url-loader",
+          loader: 'url-loader',
           options: {
-            name: "fonts/[name].[ext]",
+            name: 'fonts/[name].[ext]',
             limit: 50000,
           },
         },
@@ -56,8 +56,8 @@ module.exports = {
       inject: false,
       template: require('html-webpack-template'),
       // favicon: './images/icons/favicon.ico',
-      filename: "./index.html",
-      title: "Benjamin Chirlin - Web Devloper",
+      filename: './index.html',
+      title: 'Benjamin Chirlin - Web Devloper',
       appMountId: 'app',
       meta: [
         {
@@ -119,8 +119,8 @@ module.exports = {
       ]
     }),
     new ExtractTextPlugin({
-        filename: "[name].[contenthash].css",
-        disable: process.env.NODE_ENV === "development"
+        filename: '[name].[contenthash].css',
+        disable: process.env.NODE_ENV === 'development'
     })
   ]
 };
