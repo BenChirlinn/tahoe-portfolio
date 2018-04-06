@@ -18,6 +18,15 @@ p {
   em {
     font-style: italic;
   }
+
+  a {
+    color: @half-gray;
+    .transition(opacity);
+
+    &:hover {
+      color: @dark-gray;
+    }
+  }
 }
 
 h2, h3, h4, h5, h6 {
