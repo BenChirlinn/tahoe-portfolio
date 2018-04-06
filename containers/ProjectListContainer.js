@@ -1,0 +1,23 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import _ from 'lodash';
+
+import ProjectListItem from '../components/ProjectListItem';
+
+const ProjectListContainer = ({ projectData }) => (
+  <div id="project-list-container">
+    <h2>Work & Projects</h2>
+    {
+      _.map(projectData, (project, index, projectData) => 
+        project.homeProject && <ProjectListItem key={index} project={project} index={index} total={projectData.length} />
+      )
+    }
+  </div>
+);
+
+ProjectListContainer.propType = {
+  projectData: PropTypes.object.isRequired
+};
+
+export default ProjectListContainer;

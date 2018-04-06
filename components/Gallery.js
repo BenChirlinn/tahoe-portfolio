@@ -2,7 +2,7 @@ import React from 'react';
 
 import Slide from './Slide';
 
-const Gallery = ({images}) => (
+const Gallery = ({ images }) => (
   <div className="gallery">
     {
       images.map((slide, index, images) => 

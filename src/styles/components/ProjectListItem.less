@@ -1,0 +1,55 @@
+.project-list-item {
+  margin-bottom: 40px;
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .project-shelf-top {
+    img {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  .project-shelf-open {
+    width: 30px;
+    height: 50px;
+    background-image: url('../../images/core/chiron.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 50px;
+  }
+
+  .project-synopsis {
+    position: relative;
+
+    &::before {
+      .texture(
+        '../images/core/box-texture-mask.png';
+        @black;
+        auto;
+        top left;
+        repeat-x, no-repeat
+      );
+
+      opacity: 0.1;
+
+    }
+
+    &::after {
+      .texture(
+        '../images/core/box-texture-mask.png';
+        @black;
+        auto;
+        top left;
+        repeat-x, no-repeat
+      );
+
+      opacity: 0.1;
+      transform: rotate(180deg);
+
+    }
+  }
+}

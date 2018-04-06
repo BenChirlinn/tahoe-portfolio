@@ -1,6 +1,11 @@
 {
   "name": "the-url-slug",
+  "homeProject": false, // should this project appear in the homenav
+  "positionTitle": "Position title for homepage",
+  "synopsis": "Position synopsis for homepage",
+  "logo": "logo img name in src/images/projects/logos/img.svg",
   "title": "A Nice Title",
+  "subtitle": "A subtitle for project case study",
   "body": "The body for the post in markup",
   "gallery": [
     {

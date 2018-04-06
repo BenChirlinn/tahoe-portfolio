@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
     const { projectData = {} } = this.state;
     // console.log(projectData);
     // console.log(_.find(projectData, p => p.name === 'nosey'));
@@ -25,12 +24,16 @@ class App extends Component {
       return (
         <Router>
           <div>
-            <Route exact path="/" component={HomepageContainer} />
+            {projectData && (
+              <Route exact path="/" render={() => (
+                <HomepageContainer projectData={projectData} />
+              )} />
+            )}
             {projectData && (
               <Route path="/project/:name" render={({ match }) => (
-                <ProjectContainer project={ _.find(projectData, p => p.name === match.params.name) } />
+                <ProjectContainer project={_.find(projectData, p => p.name === match.params.name)} />
               )} />
-          )}
+            )}
           </div>
         </Router>
       );

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import ProjectsNavContainer from '../containers/ProjectsNavContainer';
+import ProjectNavContainer from '../containers/ProjectNavContainer';
 
 import Gallery from './Gallery';
 
 const Project = ({ project }) => (
-  <div id="Project-page">
+  <div id="project-page">
     <p>{project.body}</p>
     <Gallery images={project.gallery} />
-    <ProjectsNavContainer/>
+    <ProjectNavContainer/>
   </div>
 );
 

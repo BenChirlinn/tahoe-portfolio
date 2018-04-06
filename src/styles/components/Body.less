@@ -1,18 +1,13 @@
 #page-body {
   margin: 30px;
 
-  p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: Rajdhani, Veranda, sans-serif;
+  .respond-min(@tablet-portrait, {
+    margin: 30px auto;
+    max-width: 500px;
+  });
 
-    strong {
-      font-weight: 700;
-    }
-
-    em {
-      font-style: italic;
-    }
-  }
+ .respond-min(@desktop, {
+    margin: 30px auto;
+    max-width: 800px;
+  });
 }
