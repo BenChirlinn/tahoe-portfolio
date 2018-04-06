@@ -1,12 +1,12 @@
 .project-list-item {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 
   .project-header {
     align-items: center;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    cursor: pointer;;
+    cursor: pointer;
 
     .content-column({
       margin: 0 auto;
@@ -27,19 +27,29 @@
     }
   }
 
-  .project-shelf-open {
-    width: 36px;
-    height: 60px;
+  .project-shelf-toggle {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
     background-image: url('../../images/sprites/chevron.svg');
     background-repeat: no-repeat;
     background-size: 36px 60px;
+    width: 36px;
+    height: 60px;
     opacity: 0.5;
     .transition(opacity);
+    .transition(transform);
+
+    &.toggle-active {
+      transform: rotate(90deg);
+    }
   }
 
-  .project-synopsis-wrapper {
+  .project-shelf-wrapper {
+    overflow: hidden;
     position: relative;
     .inner-shadow(0, 1px, 12px, 0, 0.15);
+    .transition(height);
 
     .project-synopsis {
       padding: 14px 0;
@@ -48,6 +58,14 @@
       .content-column({
         margin: 0 auto;
       });
+    }
+
+    &.project-shelf-closed {
+      height: 0;
+    }
+
+    &.project-shelf-open {
+      height: auto;
     }
 
     &::before {
