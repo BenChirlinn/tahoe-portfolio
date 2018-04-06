@@ -7,7 +7,9 @@ import ProjectListItem from '../components/ProjectListItem';
 
 const ProjectListContainer = ({ projectData }) => (
   <div id="project-list-container">
-    <h2>Work & Projects</h2>
+    <div className='project-list-body'>
+      <h2>Work & Projects</h2>
+    </div>
     {
       _.map(projectData, (project, index, projectData) => 
         project.homeProject && <ProjectListItem key={index} project={project} index={index} total={projectData.length} />

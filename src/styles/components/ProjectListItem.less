@@ -5,6 +5,17 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    cursor: pointer;;
+
+    .content-column({
+      margin: 0 auto;
+    });
+
+    &:hover {
+      .project-shelf-open {
+        opacity: 0.75;
+      }
+    }
   }
 
   .project-shelf-top {
@@ -20,16 +31,26 @@
     background-image: url('../../images/core/chiron.svg');
     background-repeat: no-repeat;
     background-size: 30px 50px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
   }
 
   .project-synopsis {
     position: relative;
+    .inner-shadow(0, 1px, 12px, 0, 0.15);
+
+    p {
+      padding: 14px 0;
+      .content-column({
+        margin: 0 auto;
+      });
+    }
 
     &::before {
       .texture(
         '../images/core/box-texture-mask.png';
         @black;
-        auto;
+        100px 65px;
         top left;
         repeat-x, no-repeat
       );
@@ -42,7 +63,7 @@
       .texture(
         '../images/core/box-texture-mask.png';
         @black;
-        auto;
+        100px 65px;
         top left;
         repeat-x, no-repeat
       );

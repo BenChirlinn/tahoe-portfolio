@@ -20,6 +20,12 @@
   background-clip:         padding-box;
 }
 
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
 .texture(@image; @color; @size: auto; @position: 'center, top left'; @repeat: 'repeat, repeat') {
   content: '';
   position: absolute;
@@ -46,4 +52,21 @@
   @media screen and (max-width: @width) {
     @rules();
   }
+}
+
+.content-column(@rules) {
+  .respond-min(@tablet-portrait, {
+    @rules();
+    max-width: 500px;
+  });
+
+  .respond-min(@tablet-landscape, {
+    @rules();
+    max-width: 700px;
+  });
+
+ .respond-min(@desktop, {
+    @rules();
+    max-width: 800px;
+  });
 }

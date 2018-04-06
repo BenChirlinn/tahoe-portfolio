@@ -1,5 +1,6 @@
 // Colors
 @white: #FFF;
+@black: #000;
 @sun-hi-yellow: #fff442;
 @sun-lo-yellow: #f5c12d;
 @sunset-orange: #FF9105;
@@ -8,12 +9,9 @@
 @sunset-texture: rgba(255, 247, 0, 0.2);
 
 // Breakpoints
-// Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
-@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
-              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
-              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
-              ~"only screen and (min-device-pixel-ratio: 1.5)";
-@mobile:      ~"only screen and (max-width: 529px)";
-@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
-@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
-@desktop-xl:  ~"only screen and (min-width: 1129px)";
+// Source: https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+@mobile: 599px;
+@tablet-portrait: 600px;
+@tablet-landscape: 900px;
+@desktop: 1200px;
+@desktop-xl: 1800px;
