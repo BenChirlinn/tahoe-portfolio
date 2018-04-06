@@ -1,8 +1,5 @@
 const markdownFields = [
-  'positionTitle',
   'synopsis',
-  'title',
-  'subtitle',
   'body'
 ];
 
