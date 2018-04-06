@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import _ from 'lodash';
+import showdown from 'showdown';
 import projectData from '../content/projects';
+
+import { markdownFields } from '../config/content';
 
 import HomepageContainer from './HomepageContainer';
 import ProjectContainer from './ProjectContainer';
@@ -14,9 +17,18 @@ class App extends Component {
   }
 
   render() {
-    const { projectData = {} } = this.state;
-    // console.log(projectData);
-    // console.log(_.find(projectData, p => p.name === 'nosey'));
+    let { projectData = {} } = this.state;
+    const converter = new showdown.Converter();
+
+    // Convert all fields configurated to contain markdown
+    projectData = _.mapValues(projectData, project =>
+      _.mapValues(project, (value, key) => 
+        markdownFields.includes(key) ? converter.makeHtml(value) : value
+      )
+    );
+
+    console.log(projectData);
+
     // @todo repalce with separate var when no longer under construction
     if (this.props.env === 'production') {
       return <underConstructionContainer />;

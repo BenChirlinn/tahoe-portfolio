@@ -15,8 +15,8 @@ class ProjectListItem extends Component {
           </div>
           <div className='project-shelf-open' />
         </div>
-        <div className='project-synopsis'>
-          <p dangerouslySetInnerHTML={{__html: project.synopsis}} />
+        <div className='project-synopsis-wrapper'>
+          <div className='project-synopsis' dangerouslySetInnerHTML={{__html: project.synopsis}} />
         </div>
       </div>
     );
