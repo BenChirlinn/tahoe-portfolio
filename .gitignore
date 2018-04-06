@@ -25,9 +25,5 @@ package-lock.json
 # Output of 'npm pack'
 *.tgz
 
-# Webpack distributions
-core/
-
-
 # Work archive area
 work-archive/

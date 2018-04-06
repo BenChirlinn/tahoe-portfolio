@@ -30,7 +30,7 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/core\/.+\.(png|jpe?g|gif|svg)$/,  
+        test: /\/images\/sprites\/.+\.(png|jpe?g|gif|svg)$/,  
         use: {
           loader: 'url-loader',
           options: { 

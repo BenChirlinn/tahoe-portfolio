@@ -12,17 +12,17 @@
 
   &.sunset-texture::before {
     .texture(
-      '../images/core/dot-texture-mask.png';
+      '../images/sprites/dot-texture-mask.png';
       @sunset-texture;
-      auto;
-      center, bottom left;
+      100px 450px;
+      bottom left;
       repeat-x, no-repeat
     );
   }
 
   .sun-texture::before {
     .texture(
-      '../images/core/sun-texture-mask.png';
+      '../images/sprites/sun-texture-mask.png';
       @sun-hi-yellow;
       150px 150px;
       center, top left;
@@ -60,7 +60,7 @@
     display: block;
     width: 270px;
     height: 75px;
-    background: url(../../images/core/mountains.svg);
+    background-image: url('../../images/sprites/mountains.svg');
     background-size: 270px 75px;
     z-index: 1;
   }

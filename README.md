@@ -46,9 +46,9 @@ Fonts are all loaded via `url-loader` and as such are hash encoded. Because we h
 
 Images are loaded either view `url-loader` (attempting to inline them) or `file-loader`.
 
-### Core Images
+### Sprite Images
 
-Core images are fundamental to the application's appearance. Webpack will attempt to inline any images placed in the `images/core` directory. Depending on their size they may be so encoded. Regardless their filenames will include a hash afterwards.
+Sprite images are fundamental to the application's appearance. Webpack will attempt to inline any images placed in the `images/sprites` directory. Depending on their size they may be so encoded. Regardless their filenames will include a hash afterwards.
 
 ### Social Images
 
