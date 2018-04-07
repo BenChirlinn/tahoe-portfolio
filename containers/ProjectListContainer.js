@@ -6,12 +6,12 @@ import _ from 'lodash';
 import ProjectListItem from '../components/ProjectListItem';
 
 const ProjectListContainer = ({ projectData }) => (
-  <div id="project-list-container">
+  <div id="project-list-container" className="homepage-section">
     <div className='project-list-body'>
       <h2>Work & Projects</h2>
     </div>
     {
-      _.map(projectData, (project, index, projectData) => 
+      _.map(projectData, (project, index, projectData) =>
         project.homeProject && <ProjectListItem key={index} project={project} index={index} total={projectData.length} />
       )
     }

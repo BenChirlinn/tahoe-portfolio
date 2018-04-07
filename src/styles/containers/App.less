@@ -2,6 +2,17 @@
   min-width: 320px;
 }
 
+a {
+  font-size: 25px;
+  font-family: Rajdhani, Veranda, sans-serif;
+  color: @half-gray;
+  .transition(opacity);
+
+  &:hover {
+    color: @dark-gray;
+  }
+}
+
 p {
   margin-bottom: 10px;
   font-size: 25px;
@@ -17,15 +28,6 @@ p {
 
   em {
     font-style: italic;
-  }
-
-  a {
-    color: @half-gray;
-    .transition(opacity);
-
-    &:hover {
-      color: @dark-gray;
-    }
   }
 }
 

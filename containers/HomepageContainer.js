@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import SocialContainer from './SocialContainer'
 import ProjectListContainer from './ProjectListContainer'
 
 import Header from '../components/Header';
@@ -10,9 +11,8 @@ const HomepageContainer = ({ projectData }) => {
   return (
     <div id="homepage-container">
       <Header title="Benjamin<br/>Chirlin" />
-      <div id="page-body">
-        <Homepage />
-      </div>
+      <Homepage />
+      <SocialContainer />
       <ProjectListContainer projectData={projectData}/>
     </div>
   );
