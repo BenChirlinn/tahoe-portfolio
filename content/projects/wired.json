@@ -1,8 +1,8 @@
 {
   "name": "wired",
   "homeProject": true,
-  "positionTitle": "Web Developer",
-  "synopsis": "I worked on a wide variety of projects during my time at *WIRED* magazine including everything from reusable article features to managing our caching layer, Wordpress to React.\n\nMy major projects included a massive redesign, two site replatforms, and paywall implementation.",
+  "positionTitle": "Full Stack Web Developer",
+  "synopsis": "Over four plus years of hard work at *WIRED* magazine I helped migrate the venerable magazine from a messy array of Wordpress blogs to a unified in-house React application, all while maintaining over 25 years worth of priceless online content. This jounrey included everything from simple article features to massaging our caching layer.\n\nMy major projects included a massive redesign, two site replatforms, and the inaugural paywall.",
   "logo": "wired.svg",
   "title": "WIRED",
   "subtitle": "Where tomorrow is coded",
