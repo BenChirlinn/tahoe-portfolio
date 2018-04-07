@@ -22,12 +22,10 @@ class App extends Component {
 
     // Convert all fields configurated to contain markdown
     projectData = _.mapValues(projectData, project =>
-      _.mapValues(project, (value, key) => 
+      _.mapValues(project, (value, key) =>
         markdownFields.includes(key) ? converter.makeHtml(value) : value
       )
     );
-
-    console.log(projectData);
 
     // @todo repalce with separate var when no longer under construction
     if (this.props.env === 'production') {

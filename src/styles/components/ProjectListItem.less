@@ -46,10 +46,8 @@
   }
 
   .project-shelf-wrapper {
-    overflow: hidden;
     position: relative;
     .inner-shadow(0, 1px, 12px, 0, 0.15);
-    .transition(height);
 
     .project-synopsis {
       padding: 14px 0;
@@ -58,14 +56,6 @@
       .content-column({
         margin: 0 auto;
       });
-    }
-
-    &.project-shelf-closed {
-      height: 0;
-    }
-
-    &.project-shelf-open {
-      height: auto;
     }
 
     &::before {

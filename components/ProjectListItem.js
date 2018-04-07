@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+import AnimateHeight from 'react-animate-height';
 import classNames from 'classnames';
 
 class ProjectListItem extends Component {
@@ -12,6 +14,13 @@ class ProjectListItem extends Component {
   }
 
   toggleShelf() {
+    // Scroll shelf into view
+    ReactDOM.findDOMNode(this).scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
@@ -34,14 +43,11 @@ class ProjectListItem extends Component {
               'toggle-active': this.state.isToggleOn
             })} />
         </div>
-        <div className={classNames(
-            'project-shelf-wrapper',
-            {
-              'project-shelf-closed': !this.state.isToggleOn,
-              'project-shelf-open': this.state.isToggleOn
-            })}>
-          <div className='project-synopsis' dangerouslySetInnerHTML={{__html: project.synopsis}} />
-        </div>
+        <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
+          <div className='project-shelf-wrapper'>
+            <div className='project-synopsis' dangerouslySetInnerHTML={{__html: project.synopsis}} />
+          </div>
+        </AnimateHeight>
       </div>
     );
   }
@@ -54,7 +60,7 @@ ProjectListItem.propType = {
   isOpen: PropTypes.bool
 };
 
-ProjectListItem.defaultProps = {
+ProjectListItem.defaultprops = {
   isOpen: false
 };
 
