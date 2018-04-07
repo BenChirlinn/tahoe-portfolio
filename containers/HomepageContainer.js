@@ -5,14 +5,13 @@ import SocialContainer from './SocialContainer'
 import ProjectListContainer from './ProjectListContainer'
 
 import Header from '../components/Header';
-import Homepage from '../components/Homepage';
+import HomepageBody from '../components/HomepageBody';
 
 const HomepageContainer = ({ projectData }) => {
   return (
     <div id="homepage-container">
       <Header title="Benjamin<br/>Chirlin" />
-      <Homepage />
-      <SocialContainer />
+      <HomepageBody />
       <ProjectListContainer projectData={projectData}/>
       <SocialContainer />
     </div>
