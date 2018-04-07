@@ -14,6 +14,7 @@ const HomepageContainer = ({ projectData }) => {
       <Homepage />
       <SocialContainer />
       <ProjectListContainer projectData={projectData}/>
+      <SocialContainer />
     </div>
   );
 }
