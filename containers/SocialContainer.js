@@ -5,7 +5,6 @@ import SocialLink from '../components/SocialLink';
 
 const SocialContainer = () => (
   <div id='social-container'>
-    <h2>Digital Detritus</h2>
     <p>You can find me elsewhere around the web below:</p>
     <div class='social-wrapper homepage-section'>
       {
