@@ -1,7 +1,12 @@
 {
   "name": "mindsnacks",
+  "homeProject": true,
+  "positionTitle": "iOS Asset Artist",
+  "synopsis": "Going into my senior year of college I was lucky enough to find a full time summer job at an educational iOS app start-up working at a local Philly incubator. Originally brought in to supplement professional contracted work, I was soon appointed to do all the design work and asset creation after my boss, Jesse Pickard, recognized the breadth of my skillset.",
+  "logo": "mindsnacks.svg",
   "title": "Mindsnacks",
-  "body": "The body for the post in markup",
+  "subtitle": "iEducation",
+  "body": "I spent the summer of 2010 in Philadelphia leading up to my senior year of college. I found a fantastic opportunity at the local [DreamIt Ventures](http://www.dreamit.com/) with the start-up [Mindsnacks](http://mindsnacks.com/).\n\n[Mindsnacks](http://mindsnacks.com/) builds “delightful educational games for learners of all ages”. In those early days, our first target was a Spanish teaching iOS app whose framework could be used to teach numerous other languages and eventually topics.\n\nThough I was first hired as a temporary artist to help fill in the gaps between more senior contracted work, the founding partners of the soon realized I was capable of doing much more.\n\nI would be given a finished game concept (a spelling quiz, matching game, etc.) and then had to figure out how to present it in a fun engaging manner for the user, fitting our nature-driven aesthetic. I also helped design the user interface, learning much along the way about asset development for games as well as how to properly engage a user.\n\nThe company has since expanded it’s repertoire of sister apps on the iTunes store, being featured as one of the top educational apps on the platform, as well as expanding into the general brain training space. Though a brilliant new Art Director has completely rebranded the product since that distant Summer, I feel honored to have been there at the ground floor and treasure the relationships I built during that time.",
   "gallery": [
     {
       "img": "an-img.jpg",

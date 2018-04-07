@@ -1,0 +1,24 @@
+{
+  "name": "upenn",
+  "homeProject": true,
+  "positionTitle": "Bachelor of Digital Media Design",
+  "synopsis": "I graduated from the University of Pennsylvania in 2011 with a bachelor's degree in Computer Science and Engineering after four tought but rewarding years in the Digital Media Design (DMD) program there. About two thirds copmuter science and one third art, DMD was the breeding ground for my skills and style.\n\nSome classes I worked on while at Penn included web design, digital design, computer graphics, animation, and more.",
+  "logo": "upenn.svg",
+  "title": "University of Pennsylvania Undergrad",
+  "subtitle": "Leges sine moribus vanae",
+  "body": "The body for the post in markup",
+  "gallery": [
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 1 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 2 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 3 caption"
+    }
+  ]
+}

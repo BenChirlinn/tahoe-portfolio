@@ -19,6 +19,7 @@ const projectData = {
   'ultimate-jerseys': require('./ultimate-jerseys.json'),
   'my-artwork': require('./nosey.json'),
   // # College
+  'upenn': require('./upenn.json'),
   'nosey-website': require('./nosey-website.json'),
   'programmers-best-friend': require('./programmers-best-friend.json'),
   'college-web-design': require('./college-web-design.json'),
