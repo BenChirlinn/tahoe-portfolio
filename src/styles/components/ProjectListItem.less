@@ -14,7 +14,7 @@
 
     &:hover {
       .project-shelf-toggle {
-        opacity: 0.75;
+        stroke: @dark-gray;
       }
     }
   }
@@ -28,18 +28,15 @@
   }
 
   .project-shelf-toggle {
-    border: none;
     cursor: pointer;
-    background-color: transparent;
-    background-image: url('../../images/sprites/chevron.svg');
-    background-repeat: no-repeat;
-    background-size: 36px 60px;
     width: 36px;
     height: 60px;
-    opacity: 0.5;;
-    .transition();
+    stroke: @half-gray;
+    transition: stroke @fast-transition, transform @fast-transition;
+  }
 
-    &.toggle-active {
+  &.toggle-active {
+    .project-shelf-toggle {
       transform: rotate(90deg);
     }
   }

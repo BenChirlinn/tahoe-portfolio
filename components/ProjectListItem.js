@@ -31,17 +31,27 @@ class ProjectListItem extends Component {
     const {project, index, total, isOpen = false} = this.props;
 
     return (
-      <div className={classNames('project-list-item', `project-project-${project.name}`, `project-${index}`, { 'first-project': index === 0 }, { 'last-project': index >= total-1 })}>
+      <div className={
+        classNames(
+          'project-list-item',
+          `project-project-${project.name}`,
+          `project-${index}`,
+          {
+            'first-project': index === 0 ,
+            'last-project': index >= total-1,
+            'toggle-inactive': !this.state.isToggleOn,
+            'toggle-active': this.state.isToggleOn
+          }
+        )
+      }>
         <div className='project-header' onClick={this.toggleShelf}>
           <div className='project-shelf-top'>
             <img alt={`${project.title} Logo`} title={project.title} src={`../src/images/projects/logos/${project.logo}`} />
             <h4 className='project-position' dangerouslySetInnerHTML={{__html: project.positionTitle}} />
           </div>
-            'project-shelf-toggle',
-            {
-              'toggle-inactive': !this.state.isToggleOn,
-              'toggle-active': this.state.isToggleOn
-            })} path='../src/images/sprites/chevron.svg' />
+          <ReactSVG className={classNames(
+            'project-shelf-toggle'
+            )} path='../src/images/sprites/chevron.svg' />
         </div>
         <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
           <div className='project-shelf-wrapper'>
