@@ -1,0 +1,24 @@
+#footer-container {
+  padding-bottom: 20px;
+  .gradient(linear; @sunset-pink, @sunset-orange);
+  animation: sunset 3s ease infinite;
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  .mountains {
+    display: block;
+    fill: @white;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+}

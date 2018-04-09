@@ -10,7 +10,12 @@ const SocialContainer = () => (
     <div className='social-wrapper'>
       {
         socialLinks.map((platform, index, socialLinks) =>
-          <div key={index} className={classNames('social-link', `social-link-${index}`, { 'first-social-link': index === 0 }, { 'last-social-link': index >= socialLinks.count-1 })}>
+          <div key={index} className={classNames(
+            'social-link',
+            `social-link-${index}`,
+            { 'first-social-link': index === 0 },
+            { 'last-social-link': index >= socialLinks.length-1 }
+          )}>
             <SocialLink title={platform.title} url={platform.url} icon={platform.icon} />
           </div>
         )
