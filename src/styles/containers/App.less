@@ -6,7 +6,16 @@ a {
   font-size: 25px;
   font-family: Rajdhani, Veranda, sans-serif;
   color: @sunset-orange;
-  .transition(color, 0.5s);
+  transition: color @slow-transition;
+
+  svg {
+    fill: @sunset-orange;
+    transition: fill @slow-transition;
+
+    &:hover {
+      fill: @sunset-pink;
+    }
+  }
 
   &:hover {
     color: @sunset-pink;

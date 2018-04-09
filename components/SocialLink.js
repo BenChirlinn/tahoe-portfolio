@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactSVG from 'react-svg';
 
 const SocialLink = ({ title, url, icon }) => (
   <a href={url} title={title} target='_blank' className='social-link-anchor'>
     {icon ? (
-      <img alt={title} title={title} src={`../src/images/sprites/${icon}`} />
+      <ReactSVG path={`../src/images/sprites/${icon}`} />
     ) : title}
   </a>
 );

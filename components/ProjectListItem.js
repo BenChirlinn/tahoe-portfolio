@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import ReactSVG from 'react-svg';
 import PropTypes from 'prop-types';
 
 import AnimateHeight from 'react-animate-height';
@@ -36,12 +37,11 @@ class ProjectListItem extends Component {
             <img alt={`${project.title} Logo`} title={project.title} src={`../src/images/projects/logos/${project.logo}`} />
             <h4 className='project-position' dangerouslySetInnerHTML={{__html: project.positionTitle}} />
           </div>
-          <button className={classNames(
             'project-shelf-toggle',
             {
               'toggle-inactive': !this.state.isToggleOn,
               'toggle-active': this.state.isToggleOn
-            })} />
+            })} path='../src/images/sprites/chevron.svg' />
         </div>
         <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
           <div className='project-shelf-wrapper'>
