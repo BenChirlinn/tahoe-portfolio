@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import AnimateHeight from 'react-animate-height';
 import classNames from 'classnames';
 
-class ProjectListItem extends Component {
+class ExperienceListItem extends Component {
   constructor(props) {
     super(props);
     this.state = {isToggleOn: false};
@@ -63,15 +63,15 @@ class ProjectListItem extends Component {
   }
 };
 
-ProjectListItem.propType = {
+ExperienceListItem.propType = {
   project: PropTypes.object.isRequired,
   index: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   isOpen: PropTypes.bool
 };
 
-ProjectListItem.defaultprops = {
+ExperienceListItem.defaultprops = {
   isOpen: false
 };
 
-export default ProjectListItem
+export default ExperienceListItem

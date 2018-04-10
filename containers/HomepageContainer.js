@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SocialContainer from './SocialContainer';
-import ProjectListContainer from './ProjectListContainer';
+import ExperienceListContainer from './ExperienceListContainer';
 import FooterContainer from './FooterContainer';
 
 import Header from '../components/Header';
@@ -13,7 +13,7 @@ const HomepageContainer = ({ projectData }) => {
     <div id="homepage-container">
       <Header title="Benjamin<br/>Chirlin" />
       <HomepageBody />
-      <ProjectListContainer projectData={projectData}/>
+      <ExperienceListContainer projectData={projectData}/>
       <SocialContainer />
       <FooterContainer />
     </div>
