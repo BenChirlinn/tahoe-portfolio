@@ -1,6 +1,17 @@
 #footer-container {
   padding-bottom: 20px;
+  position: relative;
+
   .gradient(linear; @sunset-pink, @sunset-orange);
+  &::before {
+    .texture(
+      '../images/sprites/dot-texture-mask.png';
+      @sunset-texture;
+      100px 450px;
+      bottom left;
+      repeat-x, no-repeat
+    );
+  }
 
   .mountains {
     display: block;
