@@ -1,7 +1,7 @@
-.project-list-item {
+.experience-list-item {
   margin-bottom: 18px;
 
-  .project-header {
+  .experience-header {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -13,13 +13,13 @@
     });
 
     &:hover {
-      .project-shelf-toggle {
+      .experience-shelf-toggle {
         stroke: @dark-gray;
       }
     }
   }
 
-  .project-shelf-top {
+  .experience-shelf-top {
     margin-top: 12px;
     img {
       height: 50px;
@@ -27,7 +27,7 @@
     }
   }
 
-  .project-shelf-toggle {
+  .experience-shelf-toggle {
     cursor: pointer;
     width: 36px;
     height: 60px;
@@ -36,16 +36,16 @@
   }
 
   &.toggle-active {
-    .project-shelf-toggle {
+    .experience-shelf-toggle {
       transform: rotate(90deg);
     }
   }
 
-  .project-shelf-wrapper {
+  .experience-shelf-wrapper {
     position: relative;
     .inner-shadow(0, 1px, 12px, 0, 0.15);
 
-    .project-synopsis {
+    .experience-synopsis {
       padding: 14px 0;
       position: relative; // for z-indexing with textures
 

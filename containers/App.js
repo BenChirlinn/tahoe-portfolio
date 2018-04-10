@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Link } from 'react-router-dom';
 
 import _ from 'lodash';
 import showdown from 'showdown';
+import experienceData from '../content/experience';
 import projectData from '../content/projects';
 
 import { markdownFields } from '../config/content';
@@ -13,15 +14,15 @@ import ProjectContainer from './ProjectContainer';
 
 class App extends Component {
   componentWillMount() {
-    this.setState({ projectData });
+    this.setState({ experienceData, projectData });
   }
 
   render() {
-    let { projectData = {} } = this.state;
+    let { experienceData = {}, projectData = {} } = this.state;
     const converter = new showdown.Converter();
 
     // Convert all fields configurated to contain markdown
-    projectData = _.mapValues(projectData, project =>
+    experienceData = _.mapValues(experienceData, project =>
       _.mapValues(project, (value, key) =>
         markdownFields.includes(key) ? converter.makeHtml(value) : value
       )
@@ -34,15 +35,24 @@ class App extends Component {
       return (
         <Router>
           <div>
-            {projectData && (
+            {experienceData && (
               <Route exact path="/" render={() => (
-                <HomepageContainer projectData={projectData} />
+                <HomepageContainer experienceData={experienceData} />
               )} />
             )}
-            {projectData && (
-              <Route path="/project/:name" render={({ match }) => (
-                <ProjectContainer project={_.find(projectData, p => p.name === match.params.name)} />
-              )} />
+            {experienceData && (
+              <Route path="/project/:name" render={
+                ({ match }) => {
+                  const foundProject = _.find(projectData, p => p.name === match.params.name);
+
+                  // If project should be displayed render route else redirect to 404
+                  if(_.get(foundProject, 'display', false)) {
+                    return <ProjectContainer project={foundProject} />
+                  } else {
+                    return <Redirect from='*' to='/404' />;
+                  }
+                }
+              } />
             )}
           </div>
         </Router>

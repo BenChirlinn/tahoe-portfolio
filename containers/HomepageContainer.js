@@ -8,12 +8,12 @@ import FooterContainer from './FooterContainer';
 import Header from '../components/Header';
 import HomepageBody from '../components/HomepageBody';
 
-const HomepageContainer = ({ projectData }) => {
+const HomepageContainer = ({ experienceData }) => {
   return (
     <div id="homepage-container">
       <Header title="Benjamin<br/>Chirlin" />
       <HomepageBody />
-      <ExperienceListContainer projectData={projectData}/>
+      <ExperienceListContainer experienceData={experienceData}/>
       <SocialContainer />
       <FooterContainer />
     </div>
@@ -21,7 +21,7 @@ const HomepageContainer = ({ projectData }) => {
 }
 
 HomepageContainer.propType = {
-  projectData: PropTypes.object.isRequired
+  experienceData: PropTypes.object.isRequired
 };
 
 export default HomepageContainer;

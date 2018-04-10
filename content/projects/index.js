@@ -1,11 +1,9 @@
 const projectData = {
   // Professional digital/web projects
   // # WIRED
-  'wired': require('./wired.json'),
   'wired-pangea': require('./wired-pangea.json'),
   'wired-overhaul': require('./wired-overhaul.json'),
   // # The Mechanism
-  'the-mechanism': require('./the-mechanism.json'),
   'james-beard-foundation': require('./james-beard-foundation.json'),
   'financial-access-iniative': require('./financial-access-iniative.json'),
   'my-morning-jacket': require('./my-morning-jacket.json'),
@@ -17,9 +15,8 @@ const projectData = {
   'design-work': require('./design-work.json'),
   'nightime-adventure-society': require('./nightime-adventure-society.json'),
   'ultimate-jerseys': require('./ultimate-jerseys.json'),
-  'my-artwork': require('./nosey.json'),
+  'my-artwork': require('./my-artwork.json'),
   // # College
-  'upenn': require('./upenn.json'),
   'nosey-website': require('./nosey-website.json'),
   'programmers-best-friend': require('./programmers-best-friend.json'),
   'college-web-design': require('./college-web-design.json'),

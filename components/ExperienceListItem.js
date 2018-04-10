@@ -28,34 +28,34 @@ class ExperienceListItem extends Component {
   }
 
   render() {
-    const {project, index, total, isOpen = false} = this.props;
+    const {experience, index, total, isOpen = false} = this.props;
 
     return (
       <div className={
         classNames(
-          'project-list-item',
-          `project-project-${project.name}`,
-          `project-${index}`,
+          'experience-list-item',
+          `experience-${experience.name}`,
+          `experience-${index}`,
           {
-            'first-project': index === 0 ,
-            'last-project': index >= total-1,
+            'first-experience': index === 0 ,
+            'last-experience': index >= total-1,
             'toggle-inactive': !this.state.isToggleOn,
             'toggle-active': this.state.isToggleOn
           }
         )
       }>
-        <div className='project-header' onClick={this.toggleShelf}>
-          <div className='project-shelf-top'>
-            <img alt={`${project.title} Logo`} title={project.title} src={`../src/images/projects/logos/${project.logo}`} />
-            <h4 className='project-position' dangerouslySetInnerHTML={{__html: project.positionTitle}} />
+        <div className='experience-header' onClick={this.toggleShelf}>
+          <div className='experience-shelf-top'>
+            <img alt={`${experience.title} Logo`} title={experience.title} src={`../src/images/experience/${experience.logo}`} />
+            <h4 className='experience-position' dangerouslySetInnerHTML={{__html: experience.positionTitle}} />
           </div>
           <ReactSVG className={classNames(
-            'project-shelf-toggle'
+            'experience-shelf-toggle'
             )} path='../src/images/sprites/chevron.svg' />
         </div>
         <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
-          <div className='project-shelf-wrapper'>
-            <div className='project-synopsis' dangerouslySetInnerHTML={{__html: project.synopsis}} />
+          <div className='experience-shelf-wrapper'>
+            <div className='experience-synopsis' dangerouslySetInnerHTML={{__html: experience.synopsis}} />
           </div>
         </AnimateHeight>
       </div>
@@ -64,7 +64,7 @@ class ExperienceListItem extends Component {
 };
 
 ExperienceListItem.propType = {
-  project: PropTypes.object.isRequired,
+  experience: PropTypes.object.isRequired,
   index: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   isOpen: PropTypes.bool
