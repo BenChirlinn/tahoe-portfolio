@@ -8,11 +8,13 @@
   top: 0;
   width: 100%;
   height: @header-height;
+  z-index: 10;
+
   text-align: center;
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
 
   &.minified {
-
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 135px * 0.43) 100%, calc(50% + 90px * 0.43) calc(100% - 45px * 0.43), calc(50% + 60px * 0.43) calc(100% - 15px * 0.43), 50% calc(100% - 75px * 0.43), calc(50% - 60px * 0.43) calc(100% - 15px * 0.43), calc(50% - 90px * 0.43) calc(100% - 45px * 0.43), calc(50% - 135px * 0.43) 100%, 0 100%);
   }
 
   &.sunset-texture::before {
