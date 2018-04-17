@@ -1,14 +1,19 @@
 #page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
 
-  position:relative;
-  height: 50vh;
-  min-height: 400px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: @header-height;
   text-align: center;
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
+
+  &.minified {
+
+  }
 
   &.sunset-texture::before {
     .texture(
@@ -20,20 +25,10 @@
     );
   }
 
-  .sun-texture::before {
-    .texture(
-      '../images/sprites/sun-texture-mask.png';
-      @sun-hi-yellow;
-      150px 150px;
-      center, top left;
-      no-repeat
-    )
-  }
-
   .sun {
-    position: relative;
+    position: absolute;
+    bottom: 55%;
     display: block;
-    margin-top: 40px;
     width: 150px;
     height: 150px;
     z-index: 1;
@@ -41,6 +36,16 @@
 
     background-color: @sun-lo-yellow;
     .border-radius(75px);
+
+    &::before {
+      .texture(
+        '../images/sprites/sun-texture-mask.png';
+        @sun-hi-yellow;
+        100% 100%;
+        center, top left;
+        no-repeat
+      )
+    }
   }
 
   h1 {
@@ -49,21 +54,34 @@
     font-size: 48px;
     line-height: 48px;
     z-index: 1;
+    margin-bottom: 23px;
 
-    .respond-max(@mobile, {
-      font-size: 35px;
-      line-height: 35px;
+    .respond(false, @mobile-landscape, {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 38px;
     });
-  }
 
-  .mountains-wrapper {
-    z-index: 1;
+    .respond(false, @mobile-portrait, {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 45px;
+    });
   }
 
   .mountains {
     display: block;
     fill: @white;
-    width: 270px;
-    height: 75px;
+    width: auto;
+    height: 80%;
+    max-height: 75px;
+
+    position: relative;
+    z-index: 1;
   }
+}
+
+#page-header-spacer {
+  height: @header-height;
+  width: 100%;
 }

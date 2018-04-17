@@ -43,30 +43,41 @@
   pointer-events: none;
 }
 
-.respond-min(@width; @rules) {
-  @media screen and (min-width: @width) {
+.respond(@min; @max; @rules) when (@min = false) {
+  @media screen and (max-width: @max) {
     @rules();
   }
 }
 
-.respond-max(@width; @rules) {
-  @media screen and (max-width: @width) {
+.respond(@min; @max; @rules) when (@max = false) {
+  @media screen and (min-width: @min) {
+    @rules();
+  }
+}
+
+.respond(@min; @max; @rules) when not (@min = false) and (@max = false) {
+  @media screen and (min-width: @min) and (max-width: @max) {
     @rules();
   }
 }
 
 .content-column(@rules) {
-  .respond-min(@tablet-portrait, {
+  .respond(false, @mobile-landscape, {
+    @rules();
+    max-width: 90%;
+  });
+
+  .respond(@tablet-portrait, false, {
     @rules();
     max-width: 500px;
   });
 
-  .respond-min(@tablet-landscape, {
+  .respond(@tablet-landscape, false, {
     @rules();
     max-width: 700px;
   });
 
- .respond-min(@desktop, {
+ .respond(@desktop, false, {
     @rules();
     max-width: 800px;
   });

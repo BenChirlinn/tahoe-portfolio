@@ -10,12 +10,14 @@ import HomepageBody from '../components/HomepageBody';
 
 const HomepageContainer = ({ experienceData }) => {
   return (
-    <div id="homepage-container">
-      <Header title="Benjamin<br/>Chirlin" />
-      <HomepageBody />
-      <ExperienceListContainer experienceData={experienceData}/>
-      <SocialContainer />
-      <FooterContainer />
+    <div id='homepage-container'>
+      <Header title='Benjamin<br/>Chirlin' />
+      <div id='page-body'>
+        <HomepageBody />
+        <ExperienceListContainer experienceData={experienceData}/>
+        <SocialContainer />
+        <FooterContainer />
+      </div>
     </div>
   );
 }
