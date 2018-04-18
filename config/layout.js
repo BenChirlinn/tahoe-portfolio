@@ -1,5 +1,7 @@
-const initHeaderHeight = 400;
+const minHeaderHeight = 400;
+const barHeaderHeight = 40;
 
 module.exports = {
-  initHeaderHeight
+  minHeaderHeight,
+  barHeaderHeight
 };

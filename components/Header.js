@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import classNames from 'classnames';
 
-import { initHeaderHeight } from '../config/layout';
+import { minHeaderHeight, barHeaderHeight } from '../config/layout';
 
 class Header extends Component {
   constructor(props) {
@@ -17,21 +17,23 @@ class Header extends Component {
 
   handleScroll(event) {
     const scrollY = window.scrollY;
-    const headerHeight = initHeaderHeight - scrollY <= 40 ? 40 : initHeaderHeight - scrollY;
-
+    const initHeaderHeight = Math.max(window.innerHeight / 2, minHeaderHeight);
+    const headerHeight = Math.max(initHeaderHeight - scrollY, barHeaderHeight);
 
     this.setState(prevState => ({
       headerHeight,
-      minified: headerHeight <= 40
+      minified: headerHeight <= barHeaderHeight
     }));
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleScroll);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.handleScroll);
   }
 
   render() {
@@ -42,7 +44,8 @@ class Header extends Component {
         <div
           id='page-header'
           style={{
-            height: this.state.headerHeight
+            height: this.state.headerHeight,
+            'min-height': this.state.headerHeight
           }}
           className={
             classNames('sunset-texture', {minified: this.state.minified})
