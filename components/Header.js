@@ -18,13 +18,9 @@ class Header extends Component {
   handleScroll(event) {
     const scrollY = window.scrollY;
     const headerHeight = initHeaderHeight - scrollY <= 40 ? 40 : initHeaderHeight - scrollY;
-    // Cap top position such that 40px sticks out
-    const headerTop = headerHeight <= 40 ? 40 - initHeaderHeight : -scrollY;
-    console.log(headerHeight);
+
 
     this.setState(prevState => ({
-      scrollY,
-      headerTop,
       headerHeight,
       minified: headerHeight <= 40
     }));
