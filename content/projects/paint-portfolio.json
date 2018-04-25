@@ -1,6 +1,9 @@
 {
+  "display": false,
   "name": "paint-portfolio",
   "title": "Paint Portfolio Site",
+  "subtitle": "A \"professional\" portfolio site",
+  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
   "body": "A Wordpress website for my portfolio",
   "gallery": [
     {

@@ -1,6 +1,9 @@
 {
+  "display": true,
   "name": "nosey-website",
   "title": "Nosey: The Website",
+  "subtitle": "A website for my original animation",
+  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
   "body": "The body for the post in markup",
   "gallery": [
     {

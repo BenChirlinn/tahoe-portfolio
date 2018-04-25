@@ -1,6 +1,9 @@
 {
+  "display": true,
   "name": "james-beard-foundation",
   "title": "James Beard Foundation",
+  "subtitle": "The official website for the Oscars of the food world",
+  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
   "body": "The body for the post in markup",
   "gallery": [
     {
