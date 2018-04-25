@@ -1,0 +1,29 @@
+{
+  "display": true,
+  "name": "wired-replatform",
+  "title": "WIRED Replatform",
+  "subtitle": "Getting WIRED wired",
+  "synopsis": "Once a common database and theme were established during our \"Pangea\" project it was time to modernize WIRED's digital infrastructure. My team and I replatformed the entire site to a new Node/React based Condé Nast content management system. I was largely responsible for data migration in the form of a custom Wordpress plugin. That task complete, I later jumped on board with the rest of the team implementing various site features and improvements.",
+  "skills": [
+    "Node",
+    "React",
+    "Redux",
+    "LESS",
+    "PHP"
+  ],
+  "body": "The body for the post in markup",
+  "gallery": [
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 1 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 2 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 3 caption"
+    }
+  ]
+}

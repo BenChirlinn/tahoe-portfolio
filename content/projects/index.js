@@ -1,8 +1,10 @@
 const projectData = {
   // Professional digital/web projects
   // # WIRED
+  'wired-paywall': require('./wired-paywall.json'),
   'wired-pangea': require('./wired-pangea.json'),
-  'wired-overhaul': require('./wired-overhaul.json'),
+  'wired-replatform': require('./wired-replatform.json'),
+  'wired-cyphon': require('./wired-cyphon.json'),
   // # The Mechanism
   'james-beard-foundation': require('./james-beard-foundation.json'),
   'financial-access-iniative': require('./financial-access-iniative.json'),

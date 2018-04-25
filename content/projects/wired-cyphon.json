@@ -1,0 +1,26 @@
+{
+  "name": "wired-cyphon",
+  "display": true,
+  "title": "WIRED Cyphon",
+  "subtitle": "Maintaining (ancient) greatness",
+  "synopsis": "Though WIRED had been on Wordpress for sometime, there was plenty of content that predated such niceties as well formatted databases as the brand startred online publishing in 1993. To help migrate these historic, largely static, pages I built a custom Node application that would crawl ancient archive listings, scrape data according to a handful of custom templates, and output the results into well formated migrataion files.",
+  "body": "The body for the post in markup",
+  "link": false,
+  "skills": [
+    "Node"
+  ],
+  "gallery": [
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 1 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 2 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 3 caption"
+    }
+  ]
+}

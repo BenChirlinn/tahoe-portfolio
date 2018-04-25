@@ -1,0 +1,28 @@
+{
+  "name": "wired-paywall",
+  "display": true,
+  "title": "WIRED Paywall",
+  "subtitle": "Make the readers pay for it",
+  "synopsis": "I was the lead developer at WIRED for the site's paywall project across the entire stack. This product had to integrate a third party tracking service, [Evolok](https://www.evolok.com/), with client side user data. Much of this happened at our Fastly edge server, all with intelligent caching to boot.",
+  "body": "The body for the post in markup",
+  "link": false,
+  "skills": [
+    "VCL",
+    "Node",
+    "React"
+  ],
+  "gallery": [
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 1 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 2 caption"
+    },
+    {
+      "img": "an-img.jpg",
+      "caption": "A img 3 caption"
+    }
+  ]
+}

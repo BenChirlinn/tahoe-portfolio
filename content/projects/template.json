@@ -1,12 +1,17 @@
 {
-  "display": false,
   "name": "the-url-slug",
   "display": false, // should this project appear in the homenav
-  "subtitle": "Subtitle for homepage",
-  "synopsis": "Project synopsis for homepage",
   "title": "A Nice Title",
   "subtitle": "A subtitle for project case study",
+  "synopsis": "Project synopsis for homepage",
   "body": "The body for the post in markup",
+  "link": false, // link to project
+  "skills": [
+    "array",
+    "of",
+    "skills",
+    "used"
+  ],
   "gallery": [
     {
       "img": "an-img.jpg",
