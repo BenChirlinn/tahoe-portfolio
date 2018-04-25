@@ -45,7 +45,7 @@ class Header extends Component {
           id='page-header'
           style={{
             height: this.state.headerHeight,
-            'min-height': this.state.headerHeight
+            minHeight: this.state.headerHeight
           }}
           className={
             classNames('sunset-texture', {minified: this.state.minified})
