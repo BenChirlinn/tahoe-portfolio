@@ -11,12 +11,13 @@
   min-height: @header-min-height;
   overflow: hidden;
   // force hardware acceleration repaint
-  transform: translateZ(0);
+  transform: translate3d(0,0,0);
   z-index: 10;
 
   text-align: center;
   .gradient(linear; @sunset-orange, @sunset-pink 35%, @sunset-blue);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 4px), 0 100%);
+  // Default clip path causing repaint issues
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 4px), 0 100%);
 
   &.minified {
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + 135px * 0.43) 100%, calc(50% + 90px * 0.43) calc(100% - 45px * 0.43), calc(50% + 60px * 0.43) calc(100% - 15px * 0.43), 50% calc(100% - 75px * 0.43), calc(50% - 60px * 0.43) calc(100% - 15px * 0.43), calc(50% - 90px * 0.43) calc(100% - 45px * 0.43), calc(50% - 135px * 0.43) 100%, 0 100%);

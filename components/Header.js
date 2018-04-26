@@ -40,7 +40,7 @@ class Header extends Component {
     const {title} = this.props;
 
     return (
-      <div>
+      <header>
         <div
           id='page-header'
           style={{
@@ -55,7 +55,7 @@ class Header extends Component {
           <img className='mountains' src='../src/images/sprites/mountains.svg' />
         </div>
         <div id='page-header-spacer' />
-      </div>
+      </header>
     );
   }
 };
