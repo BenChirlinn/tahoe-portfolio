@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import _ from 'lodash';
 
-import ProjectListItem from '../components/ProjectListItem';
+import ExpandableListItem from '../components/ExpandableListItem';
 
 const ProjectListContainer = ({ projectData }) => (
   <div id="project-list-container" className="homepage-section">
@@ -12,7 +12,7 @@ const ProjectListContainer = ({ projectData }) => (
     </div>
     {
       _.map(projectData, (project, index, projectData) =>
-        project.display && <ProjectListItem key={index} project={project} index={index} total={projectData.length} />
+        project.display && <ExpandableListItem key={index} item={project} itemType='project' index={index} total={projectData.length} />
       )
     }
   </div>

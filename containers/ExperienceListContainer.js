@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import _ from 'lodash';
 
-import ExperienceListItem from '../components/ExperienceListItem';
+import ExpandableListItem from '../components/ExpandableListItem';
 
 const ExperienceListContainer = ({ experienceData }) => (
   <div id="experience-list-container" className="homepage-section">
@@ -12,7 +12,7 @@ const ExperienceListContainer = ({ experienceData }) => (
     </div>
     {
       _.map(experienceData, (experience, index, experienceData) =>
-        experience.display && <ExperienceListItem key={index} experience={experience} index={index} total={experienceData.length} />
+        experience.display && <ExpandableListItem key={index} item={experience} itemType='experience' index={index} total={experienceData.length} />
       )
     }
   </div>
