@@ -4,7 +4,6 @@
   "title": "WIRED Pangea",
   "subtitle": "Uniting a publishing institution",
   "synopsis": "When I first arrived at WIRED each section of the magazine had it's own unique Wordpress install. This made everything, from updates to new features, a massive headache. As such, my first major project was helping unite all these separate blogs with a heavily customized Wordpress theme that maintained the unique look and features of each.",
-  "body": "The body for the post in markup",
   "link": false,
   "skills": [
     "Wordpress",
@@ -13,19 +12,5 @@
     "JS",
     "MySQL",
     "SOLR"
-  ],
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
   ]
 }

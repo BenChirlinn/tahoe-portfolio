@@ -3,20 +3,11 @@
   "name": "programmers-best-friend",
   "title": "Programmers Best Friend",
   "subtitle": "An early web experiment",
-  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
-  "body": "The body for the post in markup",
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
+  "synopsis": "One of my first attempts at using JavaScript, I'm still quite proud of this fun, simple, converter tool I built in college.",
+  "link": "http://benjaminchirlin.com/work-archive/programmers-best-friend/",
+  "skills": [
+    "HTML",
+    "CSS",
+    "Javascript"
   ]
 }

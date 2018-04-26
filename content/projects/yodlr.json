@@ -2,21 +2,12 @@
   "display": true,
   "name": "yodlr",
   "title": "Yodlr",
-  "subtitle": "An animation inspired by Paul Klee",
-  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
-  "body": "The body for the post in markup",
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
+  "subtitle": "The hills are alive",
+  "synopsis": "When given time to pursue a pet project at the Mechanism, I chose to make my own simple iOS application and service from scratch. The experimental project anonymously shared whatever song you were listening to on a map for other users to explore. To support this I created a simple Node Mongo API to track song and geolocation data while allowing for location-based queries. The application is no longer available on the App Store.",
+  "link": false,
+  "skills": [
+    "Objective-C",
+    "Node",
+    "MondgoDB"
   ]
 }

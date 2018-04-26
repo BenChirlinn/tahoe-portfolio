@@ -1,22 +1,13 @@
 {
   "display": true,
   "name": "nosey-website",
-  "title": "Nosey: The Website",
-  "subtitle": "A website for my original animation",
-  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
-  "body": "The body for the post in markup",
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
+  "title": "Nosey",
+  "subtitle": "The story of a story",
+  "synopsis": "In my college web design course I created this simple one page site for an assignment to showcase an animation I made in another class. I integrated design elements from the original animation.",
+  "link": "http://benjaminchirlin.com/work-archive/nosey/",
+  "skills": [
+    "HTML",
+    "CSS",
+    "Javascript"
   ]
 }

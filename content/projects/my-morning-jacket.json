@@ -3,20 +3,9 @@
   "name": "my-morning-jacket",
   "title": "My Morning Jacket",
   "subtitle": "An iOS app for the famous band",
-  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
-  "body": "The body for the post in markup",
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
+  "synopsis": "An early solo project at the Mechanism, I built out an iPhone application for the popular band My Morning Jacket. Built on [Titanium Appcelerator](https://www.appcelerator.com/Titanium/), it allowed fans to get basic info about the band with a fun photo filter to boot. The application is no longer available on the App Store.",
+  "link": false,
+  "skills": [
+    "Java"
   ]
 }
