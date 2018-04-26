@@ -13,6 +13,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             plugins: [
+              'transform-react-jsx-img-import',
               'transform-object-rest-spread',
               'transform-runtime'
             ],
@@ -21,22 +22,22 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/social\/.+\.(png|jpe?g|gif|svg)$/,  
+        test: /\/images\/social\/.+\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'file-loader',
-          options: { 
+          options: {
             name: 'images/social/[name].[ext]'
           }
         }
       },
       {
-        test: /\/images\/sprites\/.+\.(png|jpe?g|gif|svg)$/,  
+        test: /\/images\/(sprites|experience)\/.+\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'url-loader',
-          options: { 
+          options: {
             limit: 8192, // Convert images < 8kb to base64 strings
             name: 'images/[hash]-[name].[ext]'
-          } 
+          }
         }
       },
       {
@@ -114,7 +115,7 @@ module.exports = {
           name: 'twitter:image:alt',
           content: 'Minimalist mountain landscape with a sun overlaid with \'Benjamin Chirlin, Web Developer\''
         },
-        // @todo add schema for Google+ and elsewhere http://schema.org/ 
+        // @todo add schema for Google+ and elsewhere http://schema.org/
         // maybe a collection page for home? http://schema.org/CollectionPage -->
       ]
     }),
