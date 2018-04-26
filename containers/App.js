@@ -19,7 +19,7 @@ class App extends Component {
 
   render() {
     let { experienceData = {}, projectData = {} } = this.state;
-    const converter = new showdown.Converter();
+    const converter = new showdown.Converter({openLinksInNewWindow: true});
 
     // Filter out any non-displayed data
     experienceData = _.filter(experienceData, experience => experience.display);
