@@ -11,6 +11,7 @@ import { markdownFields } from '../config/content';
 
 import HomepageContainer from './HomepageContainer';
 import ProjectContainer from './ProjectContainer';
+import UnderConstructionContainer from './UnderConstructionContainer';
 
 class App extends Component {
   componentWillMount() {
@@ -38,8 +39,8 @@ class App extends Component {
     );
 
     // @todo replace with separate var when no longer under construction
-    if (this.props.env === 'production') {
-      return <underConstructionContainer />;
+    if (this.props.underConstruction) {
+      return <UnderConstructionContainer />;
     } else {
       return (
         <Router>
@@ -57,7 +58,12 @@ class App extends Component {
 };
 
 App.propType = {
-  env: PropTypes.string
+  env: PropTypes.string.isRequired,
+  underConstruction: PropTypes.boolean
+};
+
+App.defaultprops = {
+  underConstruction: false
 };
 
 export default App;

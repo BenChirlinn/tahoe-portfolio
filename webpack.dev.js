@@ -25,8 +25,8 @@ module.exports = merge(common, {
                 sourceMap: true,
               }
             },
-            { 
-              loader: 'postcss-loader', 
+            {
+              loader: 'postcss-loader',
               options: {
                 sourceMap: true,
                 plugins: () => autoprefixer({
@@ -39,7 +39,7 @@ module.exports = merge(common, {
                 sourceMap: true
               }
             }
-          ]            
+          ]
         })
       },
     ]
@@ -47,7 +47,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify('development'),
+      'process.env.UNDER_CONSTRUCTION': false
     })
   ],
   devServer: {

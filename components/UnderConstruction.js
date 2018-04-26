@@ -2,7 +2,7 @@ import React from 'react';
 
 const UnderConstruction = () => {
   const buildText = [
-    "<strong>Under Construction</strong>",
+    "<h2>Under Construction</h2>",
     "I'm a web developer (with some design chops) living in the Bay Area.",
     "I'm currently funemployed and looking for what's next.",
     "Contact me if you have something I might find intriguing <em>info(AT)benjaminchirlin.com</em>",

@@ -13,4 +13,4 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
-ReactDOM.render(<App env={process.env.NODE_ENV} />, document.getElementById('app'))
+ReactDOM.render(<App env={process.env.NODE_ENV} underConstruction={process.env.UNDER_CONSTRUCTION} />, document.getElementById('app'))

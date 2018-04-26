@@ -25,8 +25,8 @@ module.exports = merge(common, {
             {
               loader: "css-loader"
             },
-            { 
-              loader: 'postcss-loader', 
+            {
+              loader: 'postcss-loader',
               options: {
                 plugins: () => autoprefixer({
                   browsers: ['last 3 versions', '> 1%']
@@ -41,11 +41,10 @@ module.exports = merge(common, {
       }
     ]
   },
-  // @todo This should probably be disabled long run
-  // devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.UNDER_CONSTRUCTION': false
     }),
     new UglifyJsPlugin({
       uglifyOptions: {
