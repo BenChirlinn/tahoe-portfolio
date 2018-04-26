@@ -3,7 +3,7 @@
   "name": "yodlr",
   "title": "Yodlr",
   "subtitle": "The hills are alive",
-  "synopsis": "When given time to pursue a pet project at the Mechanism, I chose to make my own simple iOS application and service from scratch. The experimental project anonymously shared whatever song you were listening to on a map for other users to explore. To support this I created a simple Node Mongo API to track song and geolocation data while allowing for location-based queries. The application is no longer available on the App Store.",
+  "synopsis": "When given time to pursue a pet project at *The Mechanism*, I chose to make my own simple iOS application with supporting online service from scratch. The experimental project anonymously shared whatever song you were listening to on a map for other users to explore.\n\nThe app then communicated with a simple Node Mongo API I made in order to track song and geolocation data while allowing for location-based queries.\n\nI designed and developed the entire project myself, along with [a small microsite](http://yodlr.themechanism.com/) to desribe and promote it. The application is no longer available on the App Store.",
   "link": false,
   "skills": [
     "Objective-C",

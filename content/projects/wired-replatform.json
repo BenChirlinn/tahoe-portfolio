@@ -3,7 +3,7 @@
   "name": "wired-replatform",
   "title": "WIRED Replatform",
   "subtitle": "Getting WIRED wired",
-  "synopsis": "Once a common database and theme were established during our \"Pangea\" project it was time to modernize WIRED's digital infrastructure. My team and I replatformed the entire site to a new Node/React based Condé Nast content management system. I was largely responsible for data migration in the form of a custom Wordpress plugin. That task complete, I later jumped on board with the rest of the team implementing various site features and improvements.",
+  "synopsis": "Once I'd helped establish a common database and theme with our \"Pangea\" project it was time to modernize WIRED's digital infrastructure. My team and I replatformed the entire site to a new Node/React based Condé Nast content management system called *Copilot*.\n\nMy primary duty was data migration from our Wordpress site via a customized plugin that exported data directly via the new CMS' API. That task complete, I later jumped on board with the rest of the team implementing various site features and improvements.",
   "skills": [
     "Node",
     "React",

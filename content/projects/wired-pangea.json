@@ -3,7 +3,7 @@
   "name": "wired-pangea",
   "title": "WIRED Pangea",
   "subtitle": "Uniting a publishing institution",
-  "synopsis": "When I first arrived at WIRED each section of the magazine had it's own unique Wordpress install. This made everything, from updates to new features, a massive headache. As such, my first major project was helping unite all these separate blogs with a heavily customized Wordpress theme that maintained the unique look and features of each.",
+  "synopsis": "When I first arrived at WIRED each section of the magazine had it's own unique Wordpress blog stitched together with some clever Apache rules. This made everything from updates to new features a massive headache.\n\nAs such, one of the first major projects I collaborated on was uniting all these separate instances into one heavily customized Wordpress theme that maintained the unique look and features of each.",
   "link": false,
   "skills": [
     "Wordpress",

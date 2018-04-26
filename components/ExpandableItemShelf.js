@@ -7,7 +7,6 @@ const ExpandableItemShelf = ({ item, itemType }) => {
   if (itemType === 'project') {
     if (!_.isEmpty(item.skills)) {
       const skillList = item.skills.reduce((skillString, skill, index, skills) => (index < skills.length - 1 ? `${skillString}${skill}, ` : `${skillString}${skill}`), '');
-      console.log(skillList);
       extraContent += `<p>Skills: ${skillList}</p>`;
     }
 
@@ -17,7 +16,7 @@ const ExpandableItemShelf = ({ item, itemType }) => {
   }
 
   return <div className='list-item-shelf-wrapper'>
-    <div className='list-item-synopsis' dangerouslySetInnerHTML={{__html: item.synopsis + extraContent}} />
+    <div className='list-item-content' dangerouslySetInnerHTML={{__html: item.synopsis + extraContent}} />
     </div>
 };
 
