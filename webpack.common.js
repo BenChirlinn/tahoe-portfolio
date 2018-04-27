@@ -31,16 +31,6 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/sprites\/.+\.(png|jpe?g|gif)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 8192, // Convert images < 8kb to base64 strings
-            name: 'images/[hash]-[name].[ext]'
-          }
-        }
-      },
-      {
         test: /\.(ttf|eot|woff|woff2)$/,
         use: {
           loader: 'url-loader',
