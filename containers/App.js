@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import _ from 'lodash';
 import showdown from 'showdown';
@@ -43,16 +43,16 @@ class App extends Component {
       return <UnderConstructionContainer />;
     } else {
       return (
-        <Router>
-          <div>
+        <BrowserRouter>
+          <Switch>
             {experienceData && (
               <Route exact path="/" render={() => (
                 <HomepageContainer experienceData={experienceData} projectData={projectData} />
               )} />
             )}
             <Route component={NotFoundContainer} />
-          </div>
-        </Router>
+          </Switch>
+        </BrowserRouter>
       );
     }
   }
