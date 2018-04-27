@@ -3,7 +3,7 @@
   "display": true,
   "title": "WIRED Paywall",
   "subtitle": "Make the readers pay for it",
-  "synopsis": "I was the lead product enginner at WIRED for the site's paywall project across the entire stack. This product had to integrate a third party tracking service, [Evolok](https://www.evolok.com/), with client side user data.\n\nMuch of the business logic happened at our Fastly edge server which I became intimiately familiar with. Since WIRED gets millions of visits, ensuring the entire project scaled and cached correctly was a difficult but inspiring challenge.",
+  "synopsis": "I was the lead product enginner at *WIRED* for the site's paywall project across the entire stack. This product had to integrate a third party tracking service, [Evolok](https://www.evolok.com/), with client side user data.\n\nMuch of the business logic happened at our Fastly edge server which I became intimiately familiar with. Since *WIRED* gets millions of visits, ensuring the entire project scaled and cached correctly was a difficult but inspiring challenge.",
   "link": false,
   "skills": [
     "VCL",

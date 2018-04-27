@@ -3,7 +3,7 @@
   "display": true,
   "title": "WIRED Cyphon",
   "subtitle": "Maintaining (historic) greatness",
-  "synopsis": "Though WIRED had been on Wordpress for sometime by my arrival there, plenty of archival content was still preserved in various long forgotten places as the brand had startred online publishing in 1993.\n\nTo help migrate these historic, largely static, pages I built a custom Node application that would crawl ancient archive listings, scrape data according to a handful of custom templates, and output the results into well formated migrataion files for import to Wordpress.\n\nIt was very rewarding knowning my action was helping preserve such historic writing and I chronicled the project in [a post on WIRED](https://www.wired.com/2015/10/cyphon-wired-archive-migration/).",
+  "synopsis": "Though *WIRED* had been on Wordpress for sometime by my arrival there, plenty of archival content was still preserved in various long forgotten places as the brand had startred online publishing in 1993.\n\nTo help migrate these historic, largely static, pages I built a custom Node application that would crawl ancient archive listings, scrape data according to a handful of custom templates, and output the results into well formated migrataion files for import to Wordpress.\n\nIt was very rewarding knowning my action was helping preserve such historic writing and I chronicled the project in [a post on *WIRED*](https://www.wired.com/2015/10/cyphon-wired-archive-migration/).",
   "link": false,
   "skills": [
     "Node"
