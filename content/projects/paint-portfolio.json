@@ -1,22 +1,15 @@
 {
-  "display": false,
+  "display": true,
   "name": "paint-portfolio",
-  "title": "Paint Portfolio Site",
+  "title": "Paint Portfolio",
   "subtitle": "A \"professional\" portfolio site",
-  "synopsis": "Pellentesque a commodo mi. Sed venenatis rutrum elit sit amet feugiat. In ut consequat tellus, vitae rhoncus ex. Nullam eu congue justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec euismod est a sollicitudin hendrerit.",
-  "body": "A Wordpress website for my portfolio",
-  "gallery": [
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 1 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 2 caption"
-    },
-    {
-      "img": "an-img.jpg",
-      "caption": "A img 3 caption"
-    }
+  "synopsis": "After my first professional engineering job I decided it was time for my personal website to reflect my newly honed skills. My primary goal was to try and push the limits of the typically boxy world of web design. Moreover I wanted to showcase the skills I'd developed while at *The Mechanism* including responsive design and CMS wizardry.\n\nI chose to go for a painterly style to emphasize my artistic background. The challenge of making such a textured site responsive was quite interesting. I also decided to fit the entire site onto a single page as much as possible for simplicity and *wow* factor.\n\nWhile I was happy with the results I never maintained the blog. After a few years it all felt a little much and generally clunky over all, being difficult to maintain and navigate.",
+  "link": "http://benjaminchirlin.com/work-archive/paint-portfolio/",
+  "skills": [
+    "Wordpress",
+    "PHP",
+    "HTML",
+    "CSS",
+    "Javascript"
   ]
 }

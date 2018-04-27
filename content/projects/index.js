@@ -5,13 +5,13 @@ const projectData = {
   'wired-pangea': require('./wired-pangea.json'),
   'wired-replatform': require('./wired-replatform.json'),
   'wired-cyphon': require('./wired-cyphon.json'),
+  // # Personal
+  'paint-portfolio': require('./paint-portfolio.json'),
   // # The Mechanism
   'james-beard-foundation': require('./james-beard-foundation.json'),
   'financial-access-iniative': require('./financial-access-iniative.json'),
   'my-morning-jacket': require('./my-morning-jacket.json'),
-  // # Personal
   'yodlr': require('./yodlr.json'),
-  'paint-portfolio': require('./paint-portfolio.json'),
   // # Other
   'mindsnacks': require('./mindsnacks.json'),
   'design-work': require('./design-work.json'),
