@@ -22,11 +22,21 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/.+\.(png|jpe?g|gif|svg)$/,
+        test: /\/images\/social\/.+\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[path][name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8192, // Convert images < 8kb to base64 strings
+            name: 'images/[hash]-[name].[ext]'
           }
         }
       },
