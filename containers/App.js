@@ -10,7 +10,7 @@ import projectData from '../content/projects';
 import { markdownFields } from '../config/content';
 
 import HomepageContainer from './HomepageContainer';
-import ProjectContainer from './ProjectContainer';
+import NotFoundContainer from './NotFoundContainer';
 import UnderConstructionContainer from './UnderConstructionContainer';
 
 class App extends Component {
@@ -50,6 +50,7 @@ class App extends Component {
                 <HomepageContainer experienceData={experienceData} projectData={projectData} />
               )} />
             )}
+            <Route component={NotFoundContainer} />
           </div>
         </Router>
       );
