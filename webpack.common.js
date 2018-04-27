@@ -31,7 +31,7 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/(sprites|experience)\/.+\.(png|jpe?g|gif|svg)$/,
+        test: /\/images\/sprites\/.+\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'url-loader',
           options: {
