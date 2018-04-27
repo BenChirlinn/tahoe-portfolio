@@ -22,7 +22,7 @@ module.exports = {
         }
       },
       {
-        test: /\/images\/(social|experience)\/.+\.(png|jpe?g|gif|svg)$/,
+        test: /\/images\/.+\.(png|jpe?g|gif|svg)$/,
         use: {
           loader: 'file-loader',
           options: {
