@@ -18,11 +18,16 @@
   }
 
   .list-item-shelf-top {
-    margin: 18px 0;
+    margin: 18px 18px 18px 0;
 
     img {
       height: 50px;
       width: auto;
+
+      .respond(false, @mobile-landscape, {
+        height: auto;
+        max-width: 100%;
+      });
     }
 
     h4 {
