@@ -51,7 +51,7 @@ class Header extends Component {
           }>
           <div className='sun' />
           <h1 dangerouslySetInnerHTML={{__html: title}}></h1>
-          <img className='mountains' src='../src/images/sprites/mountains.svg' />
+          <img className='mountains' src='../src/images/url-loader/sprites/mountains.svg' />
         </div>
         <div id='page-header-spacer' />
       </header>

@@ -52,7 +52,7 @@ class ExpandableListItem extends Component {
           <ExpandableItemTop item={item} itemType={itemType} />
           <ReactSVG className={classNames(
             'list-item-shelf-toggle'
-            )} path='../src/images/sprites/chevron.svg' />
+            )} path='../src/images/url-loader/sprites/chevron.svg' />
         </div>
         <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
           <ExpandableItemShelf item={item} itemType={itemType} />

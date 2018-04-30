@@ -54,7 +54,7 @@ module.exports = merge(common, {
         }
       }
     }),
-    new FaviconsWebpackPlugin('./src/images/my-logo.png')
+    new FaviconsWebpackPlugin('./src/images/file-loader/my-logo.png')
   ],
   output: {
     filename: "[name].[hash].js"
