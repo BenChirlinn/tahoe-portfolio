@@ -55,13 +55,16 @@ Webpack will attempt to in-line any images placed in the `images/url-loader` dir
 These images are subdivided as follows:
 
 - *sprites*: fundamental to the application's appearance (icons, textures, logos, etc)
-- *experience*: logos for the experience list
 
 I expect that a `projects` subdirectory will likely be added here soon for more project-specific images like galleries and screen shots.
 
 ### File Loader Images
 
-Images placed here will be copied directly into the `images` directory untouched. Currently this is limited to images that are referenced in meta tags or used by other plug-ins (such as favicons). This should not be necessary in most instances.
+Images placed here will be copied directly into the `images` directory untouched. This is limited to images that are referenced in code dynically, meta tags, or used by other plug-ins (such as favicons). Any place a file path is dynamically generated, I decided it was easiest to simply point to the image here.
+
+These images are subdivided as follows:
+
+- *experience*: logos for the experience list (defined in `content`)
 
 # Resources
 
