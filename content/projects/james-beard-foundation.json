@@ -3,7 +3,7 @@
   "name": "james-beard-foundation",
   "title": "James Beard Foundation",
   "subtitle": "The culinary Oscars online",
-  "synopsis": "While at *The Mechanism* I worked on a small team to help realize a modern website for this illustrious non-profit. Though that version of the site has since been replaced, we built it upon Drupal with designs from the client.\n\nI was responsible for the front end, site navigation, general structure, and third party service integration (Twitter, Facebook, Open Table, Urbanspoon).\n\nMoreover I was able to design and build certain interface widgets that weren't fleshed out in the original specifications like custom calendar and search widgets.",
+  "synopsis": "While at *The Mechanism* I worked on a small team to help realize a modern website for this illustrious non-profit. Since replaced, we built this Drupal-based website with designs from the client.\n\nI was responsible for the front end, site navigation, structure, and third party service integration (Twitter, Facebook, Open Table, Urbanspoon).\n\nMoreover I was given free reign to design and build certain interface widgets that weren't fleshed out in the original specifications like custom calendar and search widgets.",
   "link": "https://www.jamesbeard.org/",
   "skills": [
     "Drupal",
