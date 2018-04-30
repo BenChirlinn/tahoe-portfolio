@@ -80,7 +80,7 @@ module.exports = {
         },
         {
           name: 'og:image',
-          content: './images/fb-image.jpg'
+          content: 'http://www.benjaminchirlin.com/images/fb-image.jpg'
         },
         {
           name: 'og:description',
@@ -109,7 +109,7 @@ module.exports = {
         },
         {
           name: 'twitter:image',
-          content: './images/twitter-image.jpg'
+          content: 'http://www.benjaminchirlin.com/images/twitter-image.jpg'
         },
         {
           name: 'twitter:image:alt',
