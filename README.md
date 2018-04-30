@@ -1,6 +1,6 @@
 # Tahoe Theme React Portfolio Site
 
-This is a basic react app that I use as my personal portfolio as deployed to [BenjaminChirlin.com](http://www.benjaminchirlin.com).
+This is a basic react application that I use as my personal portfolio as deployed to [BenjaminChirlin.com](http://www.benjaminchirlin.com).
 
 ## Technology and Libraries
 
@@ -17,7 +17,7 @@ Included libraries and technologies:
 
 # Deployment
 
-I opted to manage deploys directly through git (see resouces below for refence). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest.
+I opted to manage deploys directly through git (see resources below for reference). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest.
 
 ### Deployment Walkthrough
 
@@ -44,15 +44,24 @@ Fonts are all loaded via `url-loader` and as such are hash encoded. Because we h
 
 ## Images
 
-Images are loaded either view `url-loader` (attempting to inline them) or `file-loader`.
+Images are loaded either view `url-loader` (attempting to in-line them) or `file-loader`. Ensure all images that need to be included in the build are included (I've dumped all these in `index.js` so far).
 
-### Sprite Images
+I attempted to find an automated way of doing this but because several components dynamically generate image names it looked like it would be more trouble than it was worth. However I did leave in the `transform-react-jsx-img-import` plug-in so any `<img>` tags in JSX files with an explicitly defined source should have their image auto-included.
 
-Sprite images are fundamental to the application's appearance. Webpack will attempt to inline any images placed in the `images/sprites` directory. Depending on their size they may be so encoded. Regardless their filenames will include a hash afterwards.
+### URL Loader Images
 
-### Social Images
+Webpack will attempt to in-line any images placed in the `images/url-loader` directory that are small enough (< 8kb). All such images will be built to the `images` directory with a hash before their name.
 
-These images are only used in meta tags in the header. As such they have to be manually imported in `index.js` and have a custom `file-loader` rule to copy them into the proper distribution directory location.
+These images are subdivided as follows:
+
+- *sprites*: fundamental to the application's appearance (icons, textures, logos, etc)
+- *experience*: logos for the experience list
+
+I expect that a `projects` subdirectory will likely be added here soon for more project-specific images like galleries and screen shots.
+
+### File Loader Images
+
+Images placed here will be copied directly into the `images` directory untouched. Currently this is limited to images that are referenced in meta tags or used by other plug-ins (such as favicons). This should not be necessary in most instances.
 
 # Resources
 
