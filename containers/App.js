@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -12,13 +13,19 @@ import { markdownFields } from '../config/content';
 import HomepageContainer from './HomepageContainer';
 import NotFoundContainer from './NotFoundContainer';
 import UnderConstructionContainer from './UnderConstructionContainer';
+import FooterContainer from './FooterContainer';
 
 class App extends Component {
   componentWillMount() {
     this.setState({ experienceData, projectData });
   }
 
+  fireTracking() {
+    ReactGA.pageview(window.location.hash);
+  }
+
   render() {
+    ReactGA.initialize('UA-21408311-2');
     let { experienceData = {}, projectData = {} } = this.state;
     const converter = new showdown.Converter({openLinksInNewWindow: true});
 
@@ -43,7 +50,7 @@ class App extends Component {
       return <UnderConstructionContainer />;
     } else {
       return (
-        <BrowserRouter>
+        <BrowserRouter onUpdate={this.fireTracking}>
           <Switch>
             {experienceData && (
               <Route exact path="/" render={() => (
