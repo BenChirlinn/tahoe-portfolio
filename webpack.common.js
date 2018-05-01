@@ -2,8 +2,23 @@
 
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+  entry: {
+    main: './src/index.js',
+    vendor: [
+      'react',
+      'react-animate-height',
+      'react-dom',
+      'react-ga',
+      'react-router-dom',
+      'react-svg',
+      'showdown',
+      'classnames',
+      'prop-types'
+    ]
+  },
   module: {
     rules: [
       {
@@ -122,6 +137,9 @@ module.exports = {
     new ExtractTextPlugin({
         filename: '[name].[contenthash].css',
         disable: process.env.NODE_ENV === 'development'
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static'
     })
   ]
 };
