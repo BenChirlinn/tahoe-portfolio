@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import _ from 'lodash';
 import showdown from 'showdown';
@@ -21,11 +21,12 @@ class App extends Component {
   }
 
   fireTracking() {
-    ReactGA.pageview(window.location.hash);
+    ReactGA.pageview(window.location.pathname);
   }
 
   render() {
     ReactGA.initialize('UA-21408311-2');
+    this.fireTracking();
     let { experienceData = {}, projectData = {} } = this.state;
     const converter = new showdown.Converter({openLinksInNewWindow: true});
 
