@@ -2,5 +2,12 @@
   h3 {
     color: @sunset-orange;
     margin-bottom: 8px;
+    transition: color @slow-transition;
+  }
+
+  &:hover {
+    h3 {
+      color: @sunset-pink;
+    }
   }
 }
