@@ -52,11 +52,11 @@ I attempted to find an automated way of doing this but because several component
 
 Webpack will attempt to in-line any images placed in the `images/url-loader` directory that are small enough (< 8kb). All such images will be built to the `images` directory with a hash before their name.
 
-These images are subdivided as follows:
-
-- *sprites*: fundamental to the application's appearance (icons, textures, logos, etc)
+These images incluide those that are small and fundamental to the application's appearance (icons, textures, logos, etc).
 
 I expect that a `projects` subdirectory will likely be added here soon for more project-specific images like galleries and screen shots.
+
+NB: If an SVG is loaded via the URL loader I don't believe there's a way to then also inline that SVG in the HTML (as required for path/fill animation etc).
 
 ### File Loader Images
 

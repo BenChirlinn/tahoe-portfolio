@@ -9,9 +9,9 @@ import mechanismImage from './images/file-loader/experience/mechanism.svg';
 import mindsnacksImage from './images/file-loader/experience/mindsnacks.svg';
 import upennImage from './images/file-loader/experience/upenn.svg';
 import wiredImage from './images/file-loader/experience/wired.svg';
-import linkedinSprite from './images/url-loader/sprites/linkedin.svg';
-import githubSprite from './images/url-loader/sprites/github.svg';
-import twitterSprite from './images/url-loader/sprites/twitter.svg';
+import linkedinSprite from './images/file-loader/linkedin.svg';
+import githubSprite from './images/file-loader/github.svg';
+import twitterSprite from './images/file-loader/twitter.svg';
 import chevronSprite from './images/url-loader/sprites/chevron.svg';
 
 // main app
