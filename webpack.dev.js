@@ -5,7 +5,9 @@ const common = require('./webpack.common.js');
 
 const webpack = require("webpack");
 const autoprefixer = require('autoprefixer');
+
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractLess = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
@@ -49,6 +51,9 @@ module.exports = merge(common, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.UNDER_CONSTRUCTION': false
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static'
     })
   ],
   devServer: {
