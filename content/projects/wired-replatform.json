@@ -3,10 +3,11 @@
   "name": "wired-replatform",
   "title": "WIRED Replatform",
   "subtitle": "Migrating and rebuilding with cutting edge tools",
-  "synopsis": "Once I'd helped establish a common database and theme with our \"Pangea\" project it was time to modernize the magazine's digital infrastructure. My team and I replatformed the entire site to a custom Node/React based Condé Nast content management system called *Copilot*.\n\nMy first duty was spearheading data migration from our Wordpress site via a custom plug-in that exported data directly via the new CMS' API. That task complete, I jumped on board with the rest of the team implementing the various site features we had to recreate in React as well as improvements.",
+  "synopsis": "Once I'd helped establish a common database and theme with our \"Pangea\" project it was time to modernize the magazine's digital infrastructure. My team and I replatformed the entire site to a custom Node/React based Condé Nast content management system called *Copilot*.\n\nMy first duty was spearheading data migration from our Wordpress site via a custom plug-in that exported data directly via the new CMS' API. This also included making changes to the CMS' Ember components to better represent this new data.\n\nMigration complete, I jumped on board with the rest of the team implementing the various site features we had to recreate in React as well as improvements.",
   "skills": [
     "Node",
     "React",
+    "Ember",
     "Redux",
     "LESS",
     "PHP"
