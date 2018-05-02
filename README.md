@@ -77,6 +77,7 @@ These images are subdivided as follows:
 - [Survive JS - *Loading Fonts*](https://survivejs.com/webpack/loading/fonts/)
 - [Stack Overflow - *webpack with less and postcss autoprefixer*](https://stackoverflow.com/questions/47846209/webpack-with-less-and-postcss-autoprefixer)
 - [HTML Webpack Template Repo](https://github.com/jaketrent/html-webpack-template)
+- [Adam Rackis, Medium - Vendor and code splitting in webpack 2](https://medium.com/@adamrackis/vendor-and-code-splitting-in-webpack-2-6376358f1923)
 
 ### Deployment
 
