@@ -2,8 +2,8 @@ const projectData = {
   // Professional digital/web projects
   // # WIRED
   'wired-paywall': require('./wired-paywall.json'),
-  'wired-pangea': require('./wired-pangea.json'),
   'wired-replatform': require('./wired-replatform.json'),
+  'wired-pangea': require('./wired-pangea.json'),
   'wired-cyphon': require('./wired-cyphon.json'),
   // # Personal
   'paint-portfolio': require('./paint-portfolio.json'),

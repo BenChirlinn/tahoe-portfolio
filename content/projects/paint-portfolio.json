@@ -2,7 +2,7 @@
   "display": true,
   "name": "paint-portfolio",
   "title": "Paint Portfolio",
-  "subtitle": "A \"professional\" portfolio site",
+  "subtitle": "A custom Wordpress portfolio site",
   "synopsis": "After my first professional engineering job I decided it was time for my personal website to reflect my newly honed skills. My primary goal was to try and push the limits of the typically boxy world of web design. Moreover I wanted to showcase the skills I'd developed while at *The Mechanism* including responsive design and CMS wizardry.\n\nI chose to go for a painterly style to emphasize my artistic background. The challenge of making such a textured site responsive was quite interesting. I also decided to fit the entire site onto a single page as much as possible for simplicity and *wow* factor.\n\nWhile I was happy with the results I never maintained the blog. After a few years it all felt a little much and generally clunky over all, being difficult to maintain and navigate.",
   "link": "http://benjaminchirlin.com/work-archive/paint-portfolio/",
   "skills": [

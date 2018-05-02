@@ -1,8 +1,8 @@
 {
-  "display": true,
+  "display": false,
   "name": "nosey-website",
   "title": "Nosey",
-  "subtitle": "The story of a story",
+  "subtitle": "Website for an animation",
   "synopsis": "In my college web design course I created this simple one page site for an assignment to showcase an animation I made in another class. I integrated design elements from the original animation in order to blur the line between short and website.",
   "link": "http://benjaminchirlin.com/work-archive/nosey/",
   "skills": [

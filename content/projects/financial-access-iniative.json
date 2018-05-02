@@ -2,7 +2,7 @@
   "display": true,
   "name": "financial-access-initiative",
   "title": "Financial Access Initiative",
-  "subtitle": "A website for a major non-profit",
+  "subtitle": "An NYU research non-profit website",
   "synopsis": "The Drupal-based website, now replaced, for this *Bill and Melidna Gates* sponsored non-profit allowed contributors to publish blog posts and academic papers. This data was then overlaid with a complex taxonomy called \"Big Questions\". I also helped set up and implement the site's advanced faceted search powered by Solr.\n\nI worked on the back and front end extensively for this site while also designing much of the user interface.",
   "link": "http://www.financialaccess.org/",
   "skills": [
