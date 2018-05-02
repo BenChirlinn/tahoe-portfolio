@@ -9,8 +9,6 @@ import classNames from 'classnames';
 import ExpandableItemTop from './ExpandableItemTop';
 import ExpandableItemShelf from './ExpandableItemShelf';
 
-import chevronSprite from '../src/images/url-loader/sprites/chevron.svg';
-
 class ExpandableListItem extends Component {
   constructor(props) {
     super(props);
@@ -52,9 +50,9 @@ class ExpandableListItem extends Component {
       }>
         <div className='list-item-header' onClick={this.toggleShelf}>
           <ExpandableItemTop item={item} itemType={itemType} />
-          <img className={classNames(
+          <ReactSVG className={classNames(
             'list-item-shelf-toggle'
-            )} src={chevronSprite} />
+            )} path={'./images/chevron.svg'} />
         </div>
         <AnimateHeight duration={500} height={this.state.isToggleOn ? 'auto' : 0}>
           <ExpandableItemShelf item={item} itemType={itemType} />

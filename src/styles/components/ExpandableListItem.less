@@ -12,7 +12,7 @@
 
     &:hover {
       .list-item-shelf-toggle {
-        opacity: 1.0;
+        stroke: @dark-gray;
       }
     }
   }
@@ -37,15 +37,15 @@
 
   .list-item-shelf-toggle {
     cursor: pointer;
-    width: 36px;
-    height: 60px;
-    opacity: 0.5;
-    transition: opacity @fast-transition, transform @fast-transition;
+    width: 60px;
+    height: 36px;
+    stroke: @half-gray;
+    transition: stroke @fast-transition, transform @fast-transition;
   }
 
   &.toggle-active {
     .list-item-shelf-toggle {
-      transform: rotate(90deg);
+      transform: rotate(180deg);
     }
   }
 

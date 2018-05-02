@@ -12,7 +12,7 @@ import wiredImage from './images/file-loader/experience/wired.svg';
 import linkedinSprite from './images/file-loader/linkedin.svg';
 import githubSprite from './images/file-loader/github.svg';
 import twitterSprite from './images/file-loader/twitter.svg';
-import chevronSprite from './images/url-loader/sprites/chevron.svg';
+import chevronSprite from './images/file-loader/chevron.svg';
 
 // main app
 import App from '../containers/App';
