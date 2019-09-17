@@ -12,7 +12,7 @@ import HomepageBody from '../components/HomepageBody';
 const HomepageContainer = ({ experienceData, projectData }) => {
   return (
     <div id='homepage-container'>
-      <Header title='Benjamin<br/>Chirlin' />
+      <Header title='Benjamin<br/>Chirlinn' />
       <div id='page-body'>
         <HomepageBody />
         <ExperienceListContainer experienceData={experienceData}/>

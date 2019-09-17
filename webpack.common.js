@@ -107,15 +107,15 @@ module.exports = {
         },
         {
           name: 'twitter:site',
-          content: '@benchirlin'
+          content: '@benchirlinn'
         },
         {
           name: 'twitter:creator',
-          content: '@benchirlin'
+          content: '@benchirlinn'
         },
         {
           name: 'twitter:title',
-          content: 'Benjamin Chirlin - Web Developer'
+          content: 'Benjamin Chirlinn - Web Developer'
         },
         {
           name: 'twitter:description',
