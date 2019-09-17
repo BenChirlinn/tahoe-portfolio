@@ -6,7 +6,7 @@ const socialLinks = [
   },
   {
     title: 'Twitter',
-    url: 'https://twitter.com/benchirlin',
+    url: 'https://twitter.com/benchirlinn',
     icon: 'twitter.svg'
   },
   {
