@@ -26,11 +26,12 @@ module.exports = merge(common, {
               loader: "css-loader"
             },
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
-                plugins: () => autoprefixer({
-                  browsers: ['last 3 versions', '> 1%']
-                })
+                plugins: () =>
+                  autoprefixer({
+                    overrideBrowserslist: ["last 3 versions", "> 1%"]
+                  })
               }
             },
             {
@@ -43,8 +44,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-      'process.env.UNDER_CONSTRUCTION': false
+      "process.env.NODE_ENV": JSON.stringify("production"),
+      "process.env.UNDER_CONSTRUCTION": false
     }),
     new UglifyJsPlugin({
       uglifyOptions: {
@@ -54,7 +55,7 @@ module.exports = merge(common, {
         }
       }
     }),
-    new FaviconsWebpackPlugin('./src/images/file-loader/my-logo.png')
+    new FaviconsWebpackPlugin("./src/images/file-loader/my-logo.png")
   ],
   output: {
     filename: "[name].[hash].js"

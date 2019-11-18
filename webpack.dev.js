@@ -23,37 +23,40 @@ module.exports = merge(common, {
           fallback: "style-loader",
           use: [
             {
-              loader: "css-loader", options: {
-                sourceMap: true,
+              loader: "css-loader",
+              options: {
+                sourceMap: true
               }
             },
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
                 sourceMap: true,
-                plugins: () => autoprefixer({
-                  browsers: ['last 3 versions', '> 1%']
-                })
+                plugins: () =>
+                  autoprefixer({
+                    overrideBrowserslist: ["last 3 versions", "> 1%"]
+                  })
               }
             },
             {
-              loader: "less-loader", options: {
+              loader: "less-loader",
+              options: {
                 sourceMap: true
               }
             }
           ]
         })
-      },
+      }
     ]
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development'),
-      'process.env.UNDER_CONSTRUCTION': false
+      "process.env.NODE_ENV": JSON.stringify("development"),
+      "process.env.UNDER_CONSTRUCTION": false
     }),
     new BundleAnalyzerPlugin({
-      analyzerMode: 'static'
+      analyzerMode: "static"
     })
   ],
   devServer: {
