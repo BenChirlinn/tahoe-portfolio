@@ -1,5 +1,7 @@
 const projectData = {
   // Professional digital/web projects
+  // # Twitch
+  'twitch-squadstream': require('./twitch-squadstream.json'),
   // # WIRED
   'wired-paywall': require('./wired-paywall.json'),
   'wired-replatform': require('./wired-replatform.json'),

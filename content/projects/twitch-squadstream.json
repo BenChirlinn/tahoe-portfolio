@@ -1,0 +1,13 @@
+{
+  "name": "twitch-squadstream",
+  "display": true,
+  "title": "Twitch Squad Stream",
+  "subtitle": "The next way to play and watch together",
+  "synopsis": "My first major project upon starting at Twitch, I helped realize much of the front end experience of Squad Streaming. My biggest task was creating the components that enabled creators to create and manage their squads on the Twitch dashboard. I also helped maintain the backend services that managed the squad data.",
+  "link": false,
+  "skills": [
+    "React",
+    "Go",
+    "LESS"
+  ]
+}
