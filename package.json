@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Personal portfolio React web application",
   "main": "index.js",
+  "engines": {
+    "node": ">9.11.2 <=11.15"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development --config webpack.dev.js",

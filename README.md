@@ -15,9 +15,12 @@ Included libraries and technologies:
 - Babel
 - React
 
+# Requirements
+As this is an older project it requires Node 11.15.0 to properly run in its present state (as specified in the `engines` requirement in `package.json`). Using `nvm` is recommended to easily swap to this required version.
+
 # Deployment
 
-I opted to manage deploys directly through git (see resources below for reference). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git worktree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest.
+I opted to manage deploys directly through git (see resources below for reference). This involved setting up a separate bare git origin on my DO droplet (called *live*) which I can push my latest changes to. There, a `post-receive` hook ensures my Git work tree, a.k.a. the key site files themselves, are put in my server's root site directory. `npm run build` must then be run manually from there to build the latest.
 
 ### Deployment Walkthrough
 
@@ -27,6 +30,14 @@ I opted to manage deploys directly through git (see resources below for referenc
 - Install latest dependencies if required `npm i`
 - Build latest `npm run build`
 - Rejoice at how relatively simple and easy to maintain this pipeline is! :tada:
+
+### Debug
+
+- `npm install` in root directory
+- `npm run dev` to spin up local build/server
+- Go to the [localhost](http://localhost:8080/) to see in action `http://localhost:8080/`
+- Note there is no live reload on file save so you have to manually restart debug to see changes
+
 
 # Webpack Config
 
@@ -52,15 +63,15 @@ I attempted to find an automated way of doing this but because several component
 
 Webpack will attempt to in-line any images placed in the `images/url-loader` directory that are small enough (< 8kb). All such images will be built to the `images` directory with a hash before their name.
 
-These images incluide those that are small and fundamental to the application's appearance (icons, textures, logos, etc).
+These images include those that are small and fundamental to the application's appearance (icons, textures, logos, etc).
 
 I expect that a `projects` subdirectory will likely be added here soon for more project-specific images like galleries and screen shots.
 
-NB: If an SVG is loaded via the URL loader I don't believe there's a way to then also inline that SVG in the HTML (as required for path/fill animation etc).
+NB: If an SVG is loaded via the URL loader I don't believe there's a way to then also in-line that SVG in the HTML (as required for path/fill animation etc).
 
 ### File Loader Images
 
-Images placed here will be copied directly into the `images` directory untouched. This is limited to images that are referenced in code dynically, meta tags, or used by other plug-ins (such as favicons). Any place a file path is dynamically generated, I decided it was easiest to simply point to the image here.
+Images placed here will be copied directly into the `images` directory untouched. This is limited to images that are referenced in code dynamically, meta tags, or used by other plug-ins (such as favicons). Any place a file path is dynamically generated, I decided it was easiest to simply point to the image here.
 
 These images are subdivided as follows:
 
@@ -84,7 +95,7 @@ These images are subdivided as follows:
 Imporant resources I used when determining production deployment include the following:
 
 - [Free Code Camp - *I Built This - Now What? How to deploy a React App on a DigitalOcean Droplet.*](https://medium.freecodecamp.org/i-built-this-now-what-how-to-deploy-a-react-app-on-a-digitalocean-droplet-662de0fe3f48)
-- [Medium - *Understanding React Deploymnent*](https://medium.com/@baphemot/understanding-react-deployment-5a717d4378fd)
+- [Medium - *Understanding React Deployment*](https://medium.com/@baphemot/understanding-react-deployment-5a717d4378fd)
 - [Webpack - *Guides/Production*](https://webpack.js.org/guides/production/)
 - [Digital Ocean - *How To Set Up Automatic Deployment with Git with a VPS*](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps)
 
