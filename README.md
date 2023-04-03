@@ -4,7 +4,7 @@ This is a basic react application that I use as my personal portfolio as deploye
 
 ## Technology and Libraries
 
-I tried to use a broad production-scale group of technologies to support this project. It was important to me that it reflect all my knowledge of web development from back end to front. Moreover it allowed me the opportunity to get into the weeds on many of the setup and configuration steps I missed during my time at WIRED as I came into our React project after the groundwork had already been laid.
+I tried to use a broad production-scale group of technologies to support this project. It was important to me that it reflect all my knowledge of web development from backend to front. Moreover it allowed me the opportunity to get into the weeds on many of the setup and configuration steps I missed during my time at WIRED as I came into our React project after the groundwork had already been laid.
 
 Included libraries and technologies:
 
