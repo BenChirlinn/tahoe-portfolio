@@ -1,0 +1,12 @@
+{
+  "name": "twitch-overlay",
+  "display": true,
+  "title": "Twitch In-Game Overlay",
+  "subtitle": "Chatting it up while you play!",
+  "synopsis": "The first feature I executed the frontend for in Twitch Studio was the in-game overlay. The overlay was intended to help smaller streamers with one monitor more easily engage with chat, alerts, and other core streaming features. However, it ended up not only being an impressive product differentiator for our software (that competitors soon mimicked) but was also useful for all streamers no matter what their size or monitor count.\n\nCode-wise the overlay was its own browser page that rendered in a transparent window which was then drawn over gameplay. It was a highly customizable feature (with an extensive setting page I also worked on) that required a lot of lateral thinking to support whatever game or set up a streamer was using.",
+  "link": false,
+  "skills": [
+    "React",
+    "Typescript"
+  ]
+}

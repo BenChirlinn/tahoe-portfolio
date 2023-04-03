@@ -1,6 +1,8 @@
 const projectData = {
   // Professional digital/web projects
   // # Twitch
+  'twitch-studio': require('./twitch-studio.json'),
+  'twitch-overlay': require('./twitch-overlay.json'),
   'twitch-squadstream': require('./twitch-squadstream.json'),
   // # WIRED
   'wired-paywall': require('./wired-paywall.json'),
