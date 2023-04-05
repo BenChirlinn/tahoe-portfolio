@@ -1,7 +1,7 @@
 const socialLinks = [
   {
     title: 'Github',
-    url: 'https://github.com/benchirlin',
+    url: 'https://github.com/benchirlinn',
     icon: 'github.svg'
   },
   {
@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/benchirlin',
+    url: 'https://www.linkedin.com/in/benchirlinn',
     icon: 'linkedin.svg'
   }
 ];
