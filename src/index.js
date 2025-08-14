@@ -10,6 +10,7 @@ import mindsnacksImage from './images/file-loader/experience/mindsnacks.svg';
 import twitchImage from './images/file-loader/experience/twitch.svg';
 import upennImage from './images/file-loader/experience/upenn.svg';
 import wiredImage from './images/file-loader/experience/wired.svg';
+import goodrxImage from './images/file-loader/experience/goodrx.svg';
 import linkedinSprite from './images/file-loader/linkedin.svg';
 import githubSprite from './images/file-loader/github.svg';
 import twitterSprite from './images/file-loader/twitter.svg';
@@ -23,3 +24,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 ReactDOM.render(<App env={process.env.NODE_ENV} underConstruction={process.env.UNDER_CONSTRUCTION} />, document.getElementById('app'))
+
