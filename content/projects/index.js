@@ -1,5 +1,8 @@
 const projectData = {
   // Professional digital/web projects
+  // # GoodRx
+  'goodrx-nextweb': require('./goodrx-nextweb.json'), 
+  'goodrx-ftc': require('./goodrx-ftc.json'), 
   // # Twitch
   'twitch-studio': require('./twitch-studio.json'),
   'twitch-overlay': require('./twitch-overlay.json'),
