@@ -1,0 +1,13 @@
+{
+  "name": "goodrx-nextweb",
+  "display": true,
+  "title": "GoodRx Migration",
+  "subtitle": "Next please!",
+  "synopsis": "After I joined the brand team at GoodRx, our main task was migrating our entire web application to a new platform powered by the latest *Next.js* framework. I helped coordinate the transition of all our various brand products into streamlined, performant components that significantly reduced tech debt while improving performance and readability. I drove reusability across the new application and improved documentation across the board. I still relish every time one of my early platform decisions pays dividends by making the latest product changes less of a zigzag for our engineering team.",
+  "link": false,
+  "skills": [
+    "Next.js",
+    "React",
+    "GraphQL"
+  ]
+}
