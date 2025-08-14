@@ -1,0 +1,12 @@
+
+{
+  "name": "goodrx",
+  "display": true,
+  "positionTitle": "Senior Software Engineer",
+  "synopsis": "I currently work at [*GoodRx*](https://www.goodrx.com/) on brand drug products that help get otherwise expensive medications to consumers at an affordable price. I previously worked on the GoodRx subscriptions team which delivered a premium \"Gold\" experience to our customers.\n\nWorking in the health care space has been a rewarding challenge and I've learned a lot about how to pair cutting edge tools with the needs of legacy systems. At GoodRx I've worked on backend services that maintain sensitive customer information, complex GraphQL solutions, SQL and postgres databases, Stripe integration, and a gorgeous frontend powered *Next.JS* and React using the latest in server side technology to help improve user experience.",
+  "logo": "goodrx.svg",
+  "title": "GoodRx",
+  "subtitle": "Affordable prescriptions",
+  "body": "",
+  "gallery": []
+}
