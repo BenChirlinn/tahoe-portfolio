@@ -1,4 +1,6 @@
 const experienceData = {
+  // GoodRx
+  twitch: require("./goodrx.json"),
   // Twitch
   twitch: require("./twitch.json"),
   // WIRED
