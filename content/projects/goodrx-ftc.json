@@ -1,0 +1,14 @@
+{
+  "name": "goodrx-ftc",
+  "display": true,
+  "title": "GoodRx Automated Data Deletion",
+  "subtitle": "Keeping data safe",
+  "synopsis": "One of my favorite challenges at GoodRx was leading the subscriptions team in creating an automated process to remove personally identifiable information (PII) about our users. This was built into our existing Gold subscriptions monolithic service. I extended the service to consume deletion notification events for a given user ID and then automatically delete all associated data in our main service. This also then fanned out requests to other subsidiary services we owned to ensure a squaky clean deletion across our ownership.\n\nThe most invigorating part of the project was leading the entire team as we swarmed to meet a rapidly approaching deadline. I coordinated multiple contributors who were handling related tasks across our said subservices and implementing output logging. It was then my responsibility to connect all these pieces into one fully automated project. The end result was extremely rewarding and we were the only team to reach the finish line on time.",
+  "link": false,
+  "skills": [
+    "Python",
+    "Kafka",
+    "PostGres",
+    "SQL"
+  ]
+}
