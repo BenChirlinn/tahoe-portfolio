@@ -1,0 +1,11 @@
+{
+  "name": "goodrx",
+  "display": true,
+  "positionTitle": "Software Enginner",
+  "synopsis": "I currently work at [*GoodRx](https://www.goodrx.com/). I started on the Gold team, providing steeper discounts to subscribers, before moving to the Brand Drug Solutions team, creating custom products for pharmaceutical companies to help drive drug sales. Working on such a clear human driven mission has been extremely rewarding. I've learned a lot about handling sensitive information while juggling various stakeholder demands.\n\nAt GoodRx I've become an expert Next.js developer while continuing to improve my Go and infra skills. I've also gotten a huge amount of managerial experience; guiding projects, junior developers, and contractors while orchestrating solutions with product, design, and client stakeholders. And of course I'm not always perfecting my workflows to take advantage of the latest AI tools including Cursor, Codex, and custom interal agnets.",
+  "logo": "goodrx.svg",
+  "title": "GoodRx",
+  "subtitle": "Affordable prescriptions for everyone",
+  "body": "",
+  "gallery": []
+}
